@@ -1,17 +1,42 @@
-.header {
+.header-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 62px 120px 0;
-  position: fixed;
-  z-index: 6;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
-.menu-navigation {
-  display: none;
+.logo {
+  margin-right: 63px;
+}
+
+.navigation {
+  display: flex;
+
+  a {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 28px;
+  }
+  
+  .active {
+
+    a {
+      color: #003DBB;
+    }
+  }
+
+  .tel {
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.ui-selectmenu-text {
+
+  &:hover {
+    color: #27dfe5;
+  }
 }
 
 .menu-btn {
@@ -83,18 +108,6 @@
 .menu-btn-active span::before {
   left: -1px;
   top: -3px;
-}
-
-.mobile-menu-navigation {
-  position: fixed;
-  right: -100%;
-  top: 0;
-  bottom: 0;
-  padding: 106px 84px 68px 80px;
-  background-color: #162137;
-  max-width: 865px;
-  transition: .5s ease-in-out right;
-  overflow: auto;
 }
 
 .show-menu {
