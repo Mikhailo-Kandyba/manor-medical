@@ -15,7 +15,7 @@
 }
 
 .menu-btn {
-  display: block;
+  display: none;
   width: 35px;
   height: 35px;
   z-index: 5;
@@ -95,69 +95,6 @@
   max-width: 865px;
   transition: .5s ease-in-out right;
   overflow: auto;
-}
-
-.navigation {
-
-  li {
-    margin-bottom: 50px;
-
-    a {
-      text-align: center;
-      text-decoration: none;
-      font-size: 80px;
-      line-height: 88px;
-      color: #fff;
-
-      &:hover {
-        color: #27dfe5;
-      }
-    }
-  }
-
-  .heading {
-    a {
-      font-size: 15px;
-      line-height: 20px;
-      letter-spacing: 0.25em;
-    }
-  }
-
-  .active {
-    a {
-      color: transparent;
-      -webkit-text-stroke: 1px white;
-    }
-  }
-}
-
-.holder-bottom-menu {
-  display: flex;
-  justify-content: space-between;
-
-  .holder-contact-menu {
-    display: flex;
-
-    li {
-      margin: 0 40px 0 0;
-
-      a {
-        font-size: 20px;
-        line-height: 30px;
-        color: #fff;
-      }
-    }
-  }
-
-  .holder-social-network {
-    display: flex;
-
-    a {
-      margin: 0 35px 0 0;
-      color: #fff;
-      font-size: 30px;
-    }
-  }
 }
 
 .show-menu {
