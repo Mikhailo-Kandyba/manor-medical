@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Q21</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <a href="#" class="logo">
+            </a>
+            <a href="#" class="menu-btn">
+                <span></span>
+            </a>
+            <div class="mobile-menu-navigation">
+                <ul class="navigation">
+                    <li class="heading">
+                        <a href="#">SPEISEKARTE</a>
+                    </li>
+                    <li>
+                        <a href="#">HAUPTSEITE</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">DIENSTLEISTUNGEN</a>
+                    </li>
+                    <li>
+                        <a href="#">KONTATIERE UNS</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
+                </ul>
+                <div class="holder-bottom-menu">
+                    <ul class="holder-contact-menu">
+                        <li>
+                            <a href="mailto:mail.example@de.com">
+                                <span>mail.example@de.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+0123 456-78-90">
+                                <span>+0123 456-78-90</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="holder-social-network">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="banner">
+
+            </div>
+        </main>
+        <footer class="footer">
+            <section class="container">
+                <div class="footer-area">
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $('.menu-btn').on('click',function(e){
+            e.preventDefault()
+            $(this).toggleClass('menu-btn-active');
+            $(".mobile-menu-navigation").toggleClass('show-menu')
+        });
+    </script>
+</body>
+</html>

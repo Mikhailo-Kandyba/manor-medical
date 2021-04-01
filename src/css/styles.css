@@ -1,0 +1,1156 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  height: 100%;
+  background: #fff;
+  font-size: 17px;
+  font-family: 'gilroy-medium'; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+i {
+  cursor: pointer; }
+  i:hover {
+    color: #27dfe5; }
+
+a {
+  color: #323232;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    color: #27dfe5; }
+  a:focus {
+    outline: none; }
+
+button {
+  cursor: pointer; }
+  button:focus {
+    outline: none; }
+
+* {
+  box-sizing: border-box; }
+
+#wrapper {
+  overflow: hidden;
+  position: relative; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'gilroy-medium'; }
+
+.z-index-2 {
+  position: relative;
+  z-index: 2; }
+
+.background-dark {
+  background: #162137; }
+
+.display-none {
+  display: none; }
+
+.unique-list .padding {
+  padding-left: 130px;
+  padding-right: 70px;
+  margin-bottom: 130px; }
+  .unique-list .padding:after {
+    width: 20px;
+    height: 20px;
+    left: 9%;
+    top: 13%; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .row .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 15px; }
+
+.unique-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .unique-list li {
+    display: flex;
+    width: 50%;
+    font-size: 23px;
+    line-height: 35px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-bottom: 80px; }
+    .unique-list li:after {
+      content: '';
+      width: 15px;
+      height: 15px;
+      background: #27dfe5;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 10px;
+      left: 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 15px; }
+
+.btn {
+  font-size: 15px;
+  line-height: 22px;
+  color: #162137;
+  padding: 13px 23px 14px 31px;
+  background: #2BF5E2;
+  border: none;
+  cursor: pointer; }
+  .btn:hover {
+    background: #27dfe5; }
+
+.btn-lg {
+  padding: 23px 102px; }
+
+.video-btn {
+  padding: 40px 25px 37px 39px;
+  background: #2BF5E2;
+  border: none; }
+  .video-btn span {
+    display: block;
+    border: 8px solid transparent;
+    border-left: 17px solid #fff; }
+  .video-btn:hover {
+    background: #27dfe5; }
+
+.holder-banner-text .btn {
+  background: #162137;
+  color: #2BF5E2; }
+  .holder-banner-text .btn:hover {
+    background: #212121; }
+
+.video-clip {
+  position: relative; }
+  .video-clip .video-btn {
+    position: absolute;
+    top: 50%;
+    right: 50%; }
+
+.sentence-service .btn {
+  padding: 22px 67px 25px 65px;
+  font-size: 22px; }
+
+.photo-employees .btn {
+  border: solid 2px #162137;
+  padding: 11px 38px 11px 31px;
+  position: relative;
+  z-index: 2; }
+
+.photo-employees li:hover .btn {
+  display: block;
+  position: absolute;
+  top: 36%;
+  left: 32%; }
+
+.video-list {
+  position: relative; }
+  .video-list .video-btn {
+    padding: 40px 25px 37px 39px;
+    border: none;
+    position: absolute;
+    top: 41%;
+    right: 40%;
+    z-index: 2; }
+
+.video-interview {
+  position: relative; }
+  .video-interview .btn {
+    background: transparent;
+    border: solid 2px #162137;
+    padding: 11px 38px 11px 31px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -48px 0 0 -105px;
+    display: none; }
+
+.video-interview:hover .btn {
+  display: block; }
+
+.scroll {
+  text-align: center; }
+  .scroll .scroll-btn {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    background: none;
+    padding: 10px;
+    border: none; }
+    .scroll .scroll-btn:hover {
+      color: #27dfe5; }
+
+.banner .durchblättern-btn {
+  color: #162137; }
+
+.durchblättern {
+  text-align: center; }
+  .durchblättern .durchblättern-btn {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    background: none;
+    padding: 10px;
+    border: none; }
+    .durchblättern .durchblättern-btn:hover {
+      color: #27dfe5; }
+
+.banner .durchblättern-btn {
+  color: #162137; }
+
+.footer {
+  background: #111C32;
+  padding: 100px 0 135px; }
+
+.footer-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer-area .footer-text {
+    max-width: 532px; }
+    .footer-area .footer-text h3 {
+      font-size: 75px;
+      line-height: 91px;
+      color: #fff;
+      text-align: left;
+      margin-bottom: 45px; }
+    .footer-area .footer-text p {
+      font-size: 23px;
+      line-height: 32px;
+      color: #fff;
+      text-align: left;
+      padding: 0 50px 0 0; }
+
+.video-blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 295px 0 204px; }
+  .video-blog .holder-text {
+    margin-bottom: 79px; }
+    .video-blog .holder-text h3 {
+      font-size: 50px;
+      line-height: 75px;
+      text-align: left;
+      color: #162137; }
+
+.video-list li {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%; }
+  .video-list li:after {
+    display: none; }
+  .video-list li img {
+    filter: grayscale(100%);
+    margin-bottom: 28px; }
+  .video-list li h3 {
+    font-size: 28px;
+    line-height: 42px;
+    color: #162137;
+    margin-bottom: 26px; }
+  .video-list li p {
+    font-size: 22px;
+    line-height: 33px;
+    color: #162137; }
+
+.holder-video-interview {
+  display: flex;
+  margin: 0 -31px; }
+  .holder-video-interview .video-interview {
+    margin: 0 23px; }
+    .holder-video-interview .video-interview img {
+      filter: grayscale(100%);
+      margin-bottom: 25px;
+      width: 100%; }
+    .holder-video-interview .video-interview h3 {
+      font-size: 28px;
+      line-height: 42px;
+      color: #162137;
+      text-align: left;
+      margin-bottom: 26px; }
+    .holder-video-interview .video-interview p {
+      font-size: 22px;
+      line-height: 33px;
+      color: #162137; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 94.5%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #2BF5E2; }
+
+.wrapper-overlay {
+  position: relative; }
+
+.wrapper-overlay:hover .overlay {
+  opacity: 0.5; }
+
+.holder-navigation .logo-holder {
+  padding: 62px 120px 0;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.holder-articles {
+  background: #162137; }
+
+.articles-photo {
+  padding: 290px 129px 210px; }
+  .articles-photo .articles-title {
+    padding: 0 86px;
+    font-size: 60px;
+    line-height: 90px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 137px; }
+  .articles-photo .holder-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 92px; }
+    .articles-photo .holder-photo img {
+      filter: grayscale(100%);
+      width: 100%; }
+  .articles-photo .holder-paragraph {
+    text-align: left;
+    padding: 0 84px;
+    margin-bottom: 88px; }
+    .articles-photo .holder-paragraph .big-paragraph {
+      margin-bottom: 69px; }
+      .articles-photo .holder-paragraph .big-paragraph p {
+        font-size: 30px;
+        line-height: 54px;
+        color: #fff;
+        margin-bottom: 55px; }
+    .articles-photo .holder-paragraph .small-paragraph {
+      font-size: 22px;
+      line-height: 40px;
+      color: #fff;
+      margin-bottom: 70px; }
+      .articles-photo .holder-paragraph .small-paragraph p {
+        font-size: 22px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 39px; }
+    .articles-photo .holder-paragraph h3 {
+      font-size: 30px;
+      line-height: 54px;
+      color: #fff;
+      margin-bottom: 42px; }
+
+@font-face {
+  font-family: 'gilroy-bold';
+  src: url("../fonts/gilroy-bold-webfont.woff2") format("woff2"), url("../fonts/gilroy-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gilroy-medium';
+  src: url("../fonts/gilroy-medium-webfont.woff2") format("woff2"), url("../fonts/gilroy-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.banner {
+  background: #F9FBF9 url("../images/iphone-x.png");
+  background-position: bottom right;
+  background-size: 1600px 1000px;
+  background-repeat: no-repeat;
+  min-height: 1010px; }
+
+.holder-banner-text {
+  text-align: left;
+  padding: 332px 0 0 27px;
+  margin-bottom: 175px;
+  max-width: 685px; }
+  .holder-banner-text h2 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #162137;
+    margin-bottom: 39px; }
+  .holder-banner-text p {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 1px;
+    color: #162137;
+    margin-bottom: 62px;
+    padding: 0 100px 0 0; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 62px 120px 0;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.menu-navigation {
+  display: none; }
+
+.menu-btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  z-index: 5;
+  position: relative; }
+  .menu-btn:before {
+    content: "";
+    height: 3px;
+    background-color: #222;
+    width: 35px;
+    position: absolute;
+    top: 7px;
+    left: -6px; }
+
+.menu-btn-active::before {
+  display: none; }
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 0;
+  margin-top: 13px;
+  margin-left: 0;
+  left: 0;
+  width: 35px;
+  height: 3px;
+  background-color: #222; }
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  transition: 0.2s; }
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+  left: -6px;
+  top: -1px; }
+
+.menu-btn span::after {
+  transform: translateY(5px);
+  top: -3px; }
+
+.menu-btn-active span {
+  height: 0; }
+
+.menu-btn-active span::before {
+  transform: rotate(45deg);
+  background-color: #fff; }
+
+.menu-btn-active span::after {
+  transform: rotate(-45deg);
+  background-color: #fff; }
+
+.menu-btn-active span::before {
+  left: -1px;
+  top: -3px; }
+
+.mobile-menu-navigation {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  padding: 106px 84px 68px 80px;
+  background-color: #162137;
+  max-width: 865px;
+  transition: .5s ease-in-out right;
+  overflow: auto; }
+
+.navigation li {
+  margin-bottom: 50px; }
+  .navigation li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 80px;
+    line-height: 88px;
+    color: #fff; }
+    .navigation li a:hover {
+      color: #27dfe5; }
+
+.navigation .heading a {
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.25em; }
+
+.navigation .active a {
+  color: transparent;
+  -webkit-text-stroke: 1px white; }
+
+.holder-bottom-menu {
+  display: flex;
+  justify-content: space-between; }
+  .holder-bottom-menu .holder-contact-menu {
+    display: flex; }
+    .holder-bottom-menu .holder-contact-menu li {
+      margin: 0 40px 0 0; }
+      .holder-bottom-menu .holder-contact-menu li a {
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff; }
+  .holder-bottom-menu .holder-social-network {
+    display: flex; }
+    .holder-bottom-menu .holder-social-network a {
+      margin: 0 35px 0 0;
+      color: #fff;
+      font-size: 30px; }
+
+.show-menu {
+  right: 0; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #2BF5E2; }
+
+.wrapper-overlay {
+  position: relative; }
+
+.wrapper-overlay:hover .overlay {
+  opacity: 0.5; }
+
+.employees {
+  padding: 350px 0 57px 0; }
+  .employees .btn {
+    display: none; }
+  .employees .holder-text {
+    margin-left: 30px; }
+    .employees .holder-text h3 {
+      font-family: 'gilroy-medium';
+      font-size: 50px;
+      line-height: 75px;
+      color: #162137;
+      text-align: left;
+      margin-bottom: 79px; }
+
+.photo-employees li {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%; }
+  .photo-employees li:after {
+    display: none; }
+  .photo-employees li h3 {
+    font-size: 28px;
+    line-height: 42px;
+    color: #162137;
+    margin-bottom: 25px; }
+  .photo-employees li p {
+    font-size: 22px;
+    line-height: 33px;
+    color: #162137; }
+  .photo-employees li img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto; }
+
+.scroll .color {
+  color: #162137; }
+
+.holder-our-advantages {
+  min-height: 1543px; }
+
+.holder-our-advantages-all {
+  padding: 300px 0 188px; }
+  .holder-our-advantages-all h3 {
+    font-size: 55px;
+    line-height: 82px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 115px; }
+
+.margin-bottom-120 {
+  margin-bottom: 120px; }
+
+.text-advantages h3 {
+  font-size: 30px;
+  line-height: 45px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 25px; }
+
+.text-advantages p {
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+  text-align: left; }
+
+.holder-appraisal {
+  display: flex;
+  justify-content: space-around; }
+  .holder-appraisal .text-appraisal {
+    max-width: 465px; }
+    .holder-appraisal .text-appraisal p {
+      font-size: 55px;
+      line-height: 66px;
+      color: #fff;
+      text-align: left; }
+
+.appraisal {
+  display: flex;
+  max-width: 725px;
+  justify-content: space-between; }
+  .appraisal .holder-star {
+    display: flex;
+    justify-content: center; }
+    .appraisal .holder-star img {
+      width: 100%;
+      height: auto;
+      margin: 0 5px; }
+  .appraisal .trustpilot-appraisal {
+    margin: 0 30px; }
+    .appraisal .trustpilot-appraisal img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 14px; }
+  .appraisal .google-appraisal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 14px; }
+
+.holder-sentence {
+  position: relative; }
+
+.gradient-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(40% 30% at 4% 36%, rgba(94, 228, 215, 0.276) 0%, rgba(94, 228, 215, 0) 100%); }
+
+.gradient-bottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(40% 30% at 96% 92%, rgba(94, 228, 215, 0.276) 0%, rgba(94, 228, 215, 0) 100%); }
+
+.wrapper-service {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 315px; }
+  .wrapper-service .img-area {
+    width: 100%; }
+    .wrapper-service .img-area img {
+      width: 100%;
+      height: auto; }
+  .wrapper-service .list-area {
+    padding-top: 240px; }
+    .wrapper-service .list-area h3 {
+      font-size: 50px;
+      line-height: 60px;
+      color: #fff;
+      margin-bottom: 77px; }
+
+.authorization-steps {
+  position: relative;
+  padding: 0 0 125px 165px; }
+  .authorization-steps .vector {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .authorization-steps .arrow-1 {
+    position: absolute;
+    top: 10%;
+    left: 38%; }
+  .authorization-steps .arrow-2 {
+    position: absolute;
+    bottom: 31%;
+    left: 30%; }
+  .authorization-steps h3 {
+    font-size: 55px;
+    line-height: 58px;
+    color: #2BF5E2; }
+  .authorization-steps h4 {
+    font-size: 55px;
+    line-height: 65px;
+    color: #fff; }
+  .authorization-steps p {
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff; }
+
+.first-step-authorization {
+  max-width: 350px; }
+  .first-step-authorization h3 {
+    margin-bottom: 74px; }
+  .first-step-authorization h4 {
+    margin-bottom: 46px; }
+
+.holder-insurance-overview {
+  display: flex;
+  justify-content: flex-end; }
+  .holder-insurance-overview .second-step {
+    max-width: 765px;
+    margin-bottom: 71px; }
+    .holder-insurance-overview .second-step h3 {
+      margin-bottom: 65px; }
+    .holder-insurance-overview .second-step h4 {
+      margin-bottom: 46px; }
+    .holder-insurance-overview .second-step p {
+      padding: 0 200px 0 0; }
+
+.third-step-authorization {
+  margin-left: 83px;
+  max-width: 400px; }
+  .third-step-authorization h3 {
+    margin-bottom: 74px; }
+  .third-step-authorization h4 {
+    margin-bottom: 46px; }
+
+.holder-video-clip {
+  position: relative;
+  padding-bottom: 415px; }
+
+.margin-bottom {
+  padding-bottom: 200px; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
+.gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(40% 30% at 14% 62%, rgba(94, 228, 215, 0.276) 0%, rgba(94, 228, 215, 0) 100%); }
+
+.video-clip {
+  padding: 406px 0 185px; }
+  .video-clip img {
+    filter: grayscale(100%);
+    width: 100%; }
+
+.description-video {
+  margin-bottom: 125px; }
+  .description-video .description-1 p {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 66px; }
+  .description-video .description-2 {
+    padding: 36px 0 0 15px; }
+    .description-video .description-2 p {
+      font-size: 22px;
+      line-height: 40px;
+      color: #fff;
+      margin-bottom: 39px; }
+
+.description-franchise {
+  margin-bottom: 135px; }
+  .description-franchise .text-franchise {
+    padding: 30px 0 0; }
+    .description-franchise .text-franchise h3 {
+      font-size: 55px;
+      line-height: 66px;
+      color: #fff;
+      text-align: left;
+      margin-bottom: 39px; }
+    .description-franchise .text-franchise p {
+      font-size: 22px;
+      line-height: 39px;
+      color: #fff;
+      padding: 0 60px 0 0; }
+  .description-franchise .list-franchise li {
+    display: flex;
+    flex-direction: column; }
+    .description-franchise .list-franchise li:after {
+      display: none; }
+    .description-franchise .list-franchise li .numeral {
+      display: block;
+      font-size: 23px;
+      line-height: 24px;
+      color: #2BF5E2;
+      margin-bottom: 40px; }
+    .description-franchise .list-franchise li p {
+      font-size: 22px;
+      line-height: 31px;
+      color: #fff; }
+
+.modal {
+  width: auto;
+  max-width: 1570px;
+  padding: 0;
+  background: none;
+  box-shadow: none; }
+
+.blocker {
+  background-color: rgba(22, 33, 55, 0.8);
+  z-index: 8;
+  padding: 544px 0; }
+
+.modal a.close-modal {
+  display: none; }
+
+.close-btn {
+  position: absolute;
+  top: -8px;
+  right: 48px;
+  z-index: 8; }
+  .close-btn .fa {
+    color: #fff;
+    font-size: 40px; }
+
+.modal-content .video-clip {
+  padding-top: 0; }
+  .modal-content .video-clip .video-btn {
+    top: 50%;
+    right: 45%; }
+  .modal-content .video-clip h3 {
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    margin-bottom: 46px; }
+
+@media (max-width: 1599px) {
+  .header {
+    padding: 62px 40px 0; }
+  .banner {
+    background-size: 1200px 800px; }
+  .holder-banner-text {
+    max-width: 585px;
+    margin-bottom: 115px; }
+  .video-clip {
+    padding: 200px 0 185px; }
+  .holder-video-clip {
+    padding-bottom: 215px; }
+  .description-franchise .text-franchise {
+    padding: 30px 0 0 25px; }
+    .description-franchise .text-franchise h3 {
+      font-size: 45px; }
+    .description-franchise .text-franchise p {
+      font-size: 20px; }
+  .wrapper-service .list-area {
+    padding-top: 40px; }
+  .authorization-steps {
+    padding: 0 0 125px 55px; }
+    .authorization-steps h3 {
+      margin-bottom: 35px; }
+  .holder-insurance-overview .second-step {
+    max-width: 665px; }
+  .authorization-steps .arrow-2 {
+    bottom: 40%;
+    left: 20%; }
+  .unique-list .padding {
+    margin-bottom: 50px; } }
+
+@media (max-width: 1199px) {
+  .btn-sm {
+    padding: 15px 60px; }
+  .container {
+    padding: 0 35px; }
+  .navigation li {
+    margin-bottom: 10px; }
+    .navigation li a {
+      font-size: 40px;
+      line-height: 60px; }
+  .mobile-menu-navigation {
+    padding: 110px 24px 60px 40px;
+    max-width: 665px; }
+  .holder-bottom-menu .holder-contact-menu li a {
+    font-size: 10px;
+    line-height: 30px; }
+  .holder-bottom-menu .holder-social-network a {
+    font-size: 20px; }
+  .banner {
+    background-size: 1000px 600px;
+    min-height: 710px; }
+  .holder-banner-text {
+    padding: 230px 0 0 0; }
+    .holder-banner-text h2 {
+      font-size: 40px;
+      margin-bottom: 20px; }
+    .holder-banner-text P {
+      font-size: 15px; }
+  .video-clip {
+    padding: 200px 0 285px; }
+    .video-clip .video-btn {
+      margin: -20px; }
+  .description-franchise .text-franchise h3 {
+    font-size: 35px;
+    line-height: 56px;
+    margin-bottom: 10px; }
+  .description-franchise .text-franchise p {
+    line-height: 30px; }
+  .description-franchise .list-franchise li {
+    padding-left: 0;
+    margin-bottom: 20px; }
+    .description-franchise .list-franchise li p {
+      font-size: 15px;
+      line-height: 25px; }
+  .wrapper-service {
+    padding-top: 200px;
+    margin-bottom: 215px; }
+    .wrapper-service .list-area h3 {
+      margin-bottom: 25px; }
+  .unique-list li {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px; }
+    .unique-list li:after {
+      width: 10px;
+      height: 10px; }
+  .authorization-steps {
+    padding: 0 0 125px 10px; }
+    .authorization-steps .arrow-2 {
+      left: 15%; }
+    .authorization-steps h3 {
+      font-size: 50px;
+      margin-bottom: 10px; }
+    .authorization-steps h4 {
+      font-size: 45px;
+      margin-bottom: 15px;
+      line-height: 50px; }
+  .holder-insurance-overview .second-step {
+    max-width: 565px; }
+    .holder-insurance-overview .second-step h3 {
+      margin-bottom: 10px; }
+    .holder-insurance-overview .second-step h4 {
+      margin-bottom: 15px; }
+  .employees {
+    padding: 250px 0 57px 0; }
+    .employees .holder-text h3 {
+      margin-bottom: 20px; }
+  .photo-employees li img {
+    margin-bottom: 0; }
+  .photo-employees li h3 {
+    margin-bottom: 5px; }
+  .photo-employees li p {
+    font-size: 15px;
+    line-height: 20px; }
+  .holder-our-advantages {
+    min-height: 1000px; }
+  .holder-our-advantages-all {
+    padding: 200px 0 190px; }
+    .holder-our-advantages-all h3 {
+      margin-bottom: 30px; }
+  .unique-list .padding {
+    padding-left: 80px;
+    padding-right: 30px; }
+    .unique-list .padding:after {
+      width: 10px;
+      height: 10px; }
+  .text-advantages h3 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px; }
+  .text-advantages p {
+    font-size: 15px;
+    line-height: 20px; }
+  .footer {
+    padding: 40px 0; }
+    .footer .footer-text h3 {
+      font-size: 55px;
+      line-height: 70px;
+      margin-bottom: 5px; }
+    .footer .footer-text p {
+      font-size: 22px;
+      line-height: 25px; } }
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 30px 40px 0; }
+  .banner {
+    min-height: 610px;
+    background-size: 800px 500px; }
+  .holder-video-clip {
+    padding-bottom: 255px; }
+  .holder-banner-text {
+    max-width: 395px;
+    padding: 230px 0 0 0; }
+    .holder-banner-text h2 {
+      font-size: 30px;
+      line-height: 45px; }
+    .holder-banner-text p {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 30px; }
+  .description-video .description-1 p {
+    font-size: 30px;
+    line-height: 40px; }
+  .description-video .description-2 {
+    padding: 25px 0 0 15px; }
+    .description-video .description-2 p {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 20px; }
+  .description-franchise .text-franchise h3 {
+    font-size: 25px;
+    line-height: 45px; }
+  .description-franchise .text-franchise p {
+    font-size: 15px; }
+  .description-franchise .list-franchise li .numeral {
+    margin-bottom: 20px; }
+  .wrapper-service {
+    padding-top: 300px; }
+  .authorization-steps .arrow-1 {
+    width: 30%; }
+  .authorization-steps .arrow-2 {
+    width: 30%;
+    left: 9%; }
+  .authorization-steps h3 {
+    font-size: 40px; }
+  .authorization-steps h4 {
+    font-size: 30px; }
+  .authorization-steps p {
+    font-size: 20px;
+    line-height: 30px; }
+  .first-step-authorization {
+    margin-bottom: 50px; }
+  .holder-insurance-overview {
+    margin-bottom: 50px; }
+  .holder-insurance-overview .second-step {
+    max-width: 415px; }
+    .holder-insurance-overview .second-step p {
+      padding: 0 130px 0 0; }
+  .third-step-authorization {
+    margin-left: 20px; }
+  .employees {
+    padding: 190px 0 57px 0; }
+    .employees .holder-text h3 {
+      font-size: 30px; }
+  .photo-employees li h3 {
+    font-size: 20px; }
+  .photo-employees li p {
+    font-size: 13px; }
+  .holder-our-advantages-all h3 {
+    font-size: 40px; }
+  .unique-list .padding {
+    padding-left: 50px;
+    padding-right: 20px; }
+    .unique-list .padding .text-advantages h3 {
+      font-size: 20px; }
+  .footer .footer-text h3 {
+    font-size: 45px;
+    line-height: 50px; }
+  .footer .footer-text p {
+    padding: 0 100px 0 0; } }
+
+@media (max-width: 767px) {
+  .mobile-menu-navigation {
+    right: -160%; }
+  .menu-btn:before {
+    width: 20px;
+    height: 2px; }
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after {
+    width: 20px;
+    height: 2px;
+    margin-top: 12px; }
+  .menu-btn span::after {
+    top: -5px; }
+  .menu-btn {
+    width: 18px;
+    height: 32px; }
+  .container {
+    padding: 0 20px; }
+  .header {
+    padding: 20px 20px 0; }
+  .logo img {
+    width: 40px; }
+  .banner {
+    background-position: bottom;
+    min-height: 565px; }
+  .holder-banner-text {
+    padding: 174px 0 60px 0; }
+    .holder-banner-text h2 {
+      font-size: 21px;
+      line-height: 29px;
+      margin-bottom: 21px; }
+  .btn-mb {
+    font-size: 11px;
+    padding: 9px 23px; }
+  .scroll {
+    display: none; }
+  .video-clip {
+    padding: 165px 0 67px; }
+    .video-clip img {
+      height: 290px;
+      width: 280px; }
+  .description-video {
+    display: flex;
+    flex-direction: column; }
+    .description-video .description-1 p {
+      font-size: 23px;
+      line-height: 29px; }
+    .description-video .description-1 .btn {
+      display: none; } }
