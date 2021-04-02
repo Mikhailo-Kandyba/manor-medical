@@ -191,6 +191,7 @@
 .sentence {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .sentence-text {
@@ -214,4 +215,23 @@
 
 .holder-img {
   position: relative;
+}
+
+.terms {
+
+  h3 {
+    font-size: 35px;
+    line-height: 65px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.holder-area {
+  display: flex;
+  justify-content: space-between;
 }
