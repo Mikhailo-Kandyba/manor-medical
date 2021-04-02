@@ -107,33 +107,63 @@ h6 {
     padding-right: 10px;
     margin-bottom: 80px; }
 
+.border-radius-bl {
+  border-bottom-left-radius: 60px;
+  position: relative;
+  z-index: 1; }
+
+.padding-left-49 {
+  padding-left: 49px; }
+
+.padding-left-91 {
+  padding-left: 91px; }
+
+.decor {
+  position: absolute;
+  width: 170px;
+  height: 205px;
+  background: #36CDC6;
+  top: -20px;
+  left: 9px;
+  z-index: -1; }
+
+.decor-lg {
+  width: 395px;
+  height: 555px; }
+
+.decor-2 {
+  position: absolute;
+  width: 230px;
+  height: 325px;
+  background: #BBBCBE;
+  top: 30%;
+  left: 40px; }
+
+.btn {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  position: relative; }
+  .btn a {
+    color: #003DBB;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px; }
+    .btn a:hover {
+      color: #27dfe5; }
+  .btn span {
+    position: absolute;
+    background: #003DBB;
+    width: 100px;
+    height: 2px;
+    bottom: 7px;
+    right: 1px; }
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
   padding: 0 15px;
   width: 100%; }
-
-.header-content {
-  display: flex;
-  align-items: center; }
-
-.logo {
-  margin-right: 63px; }
-
-.navigation {
-  display: flex; }
-  .navigation a {
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 28px; }
-  .navigation .active a {
-    color: #003DBB; }
-  .navigation .tel a {
-    display: block;
-    text-align: center; }
-
-.ui-selectmenu-text:hover {
-  color: #27dfe5; }
 
 .menu-btn {
   display: none;
@@ -196,3 +226,86 @@ h6 {
 
 .show-menu {
   right: 0; }
+
+.header {
+  margin-bottom: 50px; }
+
+.header-content {
+  display: flex;
+  align-items: center; }
+
+.logo {
+  margin-right: 63px; }
+
+.navigation {
+  display: flex; }
+  .navigation a {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 28px; }
+  .navigation .active a {
+    color: #003DBB; }
+  .navigation .tel a {
+    display: block;
+    text-align: center; }
+
+.ui-selectmenu-text:hover {
+  color: #27dfe5; }
+
+.banner {
+  display: flex;
+  justify-content: space-between; }
+
+.speaker-1 {
+  position: relative; }
+
+.holder-number {
+  display: flex;
+  margin-bottom: 65px; }
+  .holder-number .number {
+    display: block;
+    font-size: 140px;
+    line-height: 65px;
+    color: #0F40B7;
+    letter-spacing: 13px; }
+  .holder-number .bill {
+    display: block;
+    font-size: 57px;
+    line-height: 65px;
+    color: #0F40B7;
+    transform: rotate(-90deg);
+    margin-left: -30px; }
+
+.speaker-text {
+  max-width: 585px;
+  margin-bottom: 22px; }
+  .speaker-text h3 {
+    font-size: 70px;
+    line-height: 75px;
+    letter-spacing: 6px;
+    margin-bottom: 20px; }
+  .speaker-text p {
+    font-size: 18px;
+    line-height: 25px; }
+
+.speaker-2 {
+  position: relative; }
+  .speaker-2 .block-50 {
+    background: #0F40B7;
+    max-width: 524px;
+    margin-bottom: 65px; }
+    .speaker-2 .block-50 p {
+      font-size: 17px;
+      line-height: 22px;
+      color: #fff; }
+
+.position {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -55px;
+  right: -40px; }
+
+.holder-btn {
+  display: flex;
+  justify-content: flex-end; }

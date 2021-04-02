@@ -129,6 +129,72 @@ h6 {
   }
 }
 
+.border-radius-bl {
+  border-bottom-left-radius: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.padding-left-49 {
+  padding-left: 49px;
+}
+
+.padding-left-91 {
+  padding-left: 91px;
+}
+
+.decor {
+  position: absolute;
+  width: 170px;
+  height: 205px;
+  background: #36CDC6;
+  top: -20px;
+  left: 9px;
+  z-index: -1;
+}
+
+.decor-lg {
+  width: 395px;
+  height: 555px;
+}
+
+.decor-2 {
+  position: absolute;
+  width: 230px;
+  height: 325px;
+  background: #BBBCBE;
+  top: 30%;
+  left: 40px;
+}
+
+.btn {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  position: relative;
+
+  a {
+    color: #003DBB;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #27dfe5;
+    }
+  }
+
+  span {
+    position: absolute;
+    background: #003DBB;
+    width: 100px;
+    height: 2px;
+    bottom: 7px;
+    right: 1px;
+  }
+}
+
+
 
 
 

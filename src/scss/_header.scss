@@ -1,44 +1,3 @@
-.header-content {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  margin-right: 63px;
-}
-
-.navigation {
-  display: flex;
-
-  a {
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 28px;
-  }
-  
-  .active {
-
-    a {
-      color: #003DBB;
-    }
-  }
-
-  .tel {
-
-    a {
-      display: block;
-      text-align: center;
-    }
-  }
-}
-
-.ui-selectmenu-text {
-
-  &:hover {
-    color: #27dfe5;
-  }
-}
-
 .menu-btn {
   display: none;
   width: 35px;
@@ -112,4 +71,126 @@
 
 .show-menu {
   right: 0;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 63px;
+}
+
+.navigation {
+  display: flex;
+
+  a {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 28px;
+  }
+  
+  .active {
+
+    a {
+      color: #003DBB;
+    }
+  }
+
+  .tel {
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.ui-selectmenu-text {
+
+  &:hover {
+    color: #27dfe5;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.speaker-1 {
+  position: relative;
+}
+
+.holder-number {
+  display: flex;
+  margin-bottom: 65px;
+
+  .number {
+    display: block;
+    font-size: 140px;
+    line-height: 65px;
+    color: #0F40B7;
+    letter-spacing: 13px;
+  }
+
+  .bill {
+    display: block;
+    font-size: 57px;
+    line-height: 65px;
+    color: #0F40B7;
+    transform: rotate(-90deg);
+    margin-left: -30px;
+  }
+}
+
+.speaker-text {
+  max-width: 585px;
+  margin-bottom: 22px;
+
+  h3 {
+    font-size: 70px;
+    line-height: 75px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.speaker-2 {
+  position: relative;
+
+  .block-50 {
+    background: #0F40B7;
+    max-width: 524px;
+    margin-bottom: 65px;
+
+    p {
+      font-size: 17px;
+      line-height: 22px;
+      color: #fff;
+    }
+  }
+}
+
+.position {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -55px;
+  right: -40px;
+}
+
+.holder-btn {
+  display: flex;
+  justify-content: flex-end;
 }
