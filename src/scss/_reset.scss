@@ -143,6 +143,10 @@ h6 {
   padding-left: 91px;
 }
 
+.padding-top-75 {
+  padding-top: 75px;
+}
+
 .decor {
   position: absolute;
   width: 170px;
@@ -156,6 +160,27 @@ h6 {
 .decor-lg {
   width: 395px;
   height: 555px;
+}
+
+.decor-xl {
+  width: 415px;
+  height: 205px;
+}
+
+.position {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -55px;
+  right: -40px;
+}
+
+.position-2 {
+  position: absolute;
+  top: 35px;
+  left: -30px;
+  bottom: auto;
+  right: auto;
 }
 
 .decor-2 {

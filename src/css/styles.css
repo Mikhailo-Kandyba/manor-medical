@@ -118,6 +118,9 @@ h6 {
 .padding-left-91 {
   padding-left: 91px; }
 
+.padding-top-75 {
+  padding-top: 75px; }
+
 .decor {
   position: absolute;
   width: 170px;
@@ -130,6 +133,24 @@ h6 {
 .decor-lg {
   width: 395px;
   height: 555px; }
+
+.decor-xl {
+  width: 415px;
+  height: 205px; }
+
+.position {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -55px;
+  right: -40px; }
+
+.position-2 {
+  position: absolute;
+  top: 35px;
+  left: -30px;
+  bottom: auto;
+  right: auto; }
 
 .decor-2 {
   position: absolute;
@@ -254,7 +275,8 @@ h6 {
 
 .banner {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 172px; }
 
 .speaker-1 {
   position: relative; }
@@ -299,13 +321,25 @@ h6 {
       line-height: 22px;
       color: #fff; }
 
-.position {
-  position: absolute;
-  top: auto;
-  left: auto;
-  bottom: -55px;
-  right: -40px; }
-
 .holder-btn {
   display: flex;
   justify-content: flex-end; }
+
+.sentence {
+  display: flex;
+  justify-content: space-between; }
+
+.sentence-text {
+  max-width: 570px; }
+  .sentence-text h5 {
+    font-size: 60px;
+    line-height: 65px;
+    margin-bottom: 50px; }
+    .sentence-text h5:first-line {
+      font-weight: 700; }
+  .sentence-text p {
+    font-size: 18px;
+    line-height: 25px; }
+
+.holder-img {
+  position: relative; }

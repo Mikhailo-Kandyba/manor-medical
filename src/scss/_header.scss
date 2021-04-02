@@ -121,6 +121,7 @@
 .banner {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 172px;
 }
 
 .speaker-1 {
@@ -182,15 +183,35 @@
   }
 }
 
-.position {
-  position: absolute;
-  top: auto;
-  left: auto;
-  bottom: -55px;
-  right: -40px;
-}
-
 .holder-btn {
   display: flex;
   justify-content: flex-end;
+}
+
+.sentence {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sentence-text {
+  max-width: 570px;
+
+  h5 {
+    font-size: 60px;
+    line-height: 65px;
+    margin-bottom: 50px;
+
+    &:first-line {
+      font-weight: 700;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.holder-img {
+  position: relative;
 }
