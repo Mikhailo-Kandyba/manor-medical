@@ -1,0 +1,31 @@
+.holder-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  position: relative;
+
+  a {
+    color: #003DBB;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #27dfe5;
+    }
+  }
+
+  span {
+    position: absolute;
+    background: #003DBB;
+    width: 100px;
+    height: 2px;
+    bottom: 7px;
+    right: 1px;
+  }
+}

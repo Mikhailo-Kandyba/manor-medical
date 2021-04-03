@@ -111,6 +111,87 @@ h6 {
   }
 }
 
+.unique-block-background-1 {
+
+  .unique-block {
+    background: #36CDC6;
+  }
+}
+
+.unique-block-background-2 {
+
+  .unique-block {
+    background: #70B854;
+  }
+}
+
+.unique-block-background-3 {
+
+  .unique-block {
+    background: #E74A53;
+  }
+}
+
+.unique-block-background-4 {
+
+  .unique-block {
+    background: #00ADEF;
+  }
+}
+
+.unique-block-xl {
+
+  .unique-area {
+    padding-left: 0;
+
+    .unique-block {
+      max-width: none;
+      padding: 40px 10px;
+    }
+  }
+}
+
+.list-flex {
+
+  li {
+    flex-direction: column;
+  }
+}
+
+.unique-width {
+
+  .unique-area {
+    width: 25%;
+  }
+}
+
+.unique-text-margin-left {
+
+  .unique-area {
+
+    .unique-text {
+      border: none;
+      margin-left: 0;
+
+      p {
+        max-width: none;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.unique-list-sm {
+  max-width: 665px;
+  margin-bottom: 13px;
+
+  .service {
+    padding-left: 30px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+}
+
 .unique-list {
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +207,17 @@ h6 {
     padding-left: 30px;
     padding-right: 10px;
     margin-bottom: 80px;
+
+    &:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #27dfe5;
+      border-bottom-left-radius: 60px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
   }
 }
 
@@ -149,6 +241,36 @@ h6 {
 
 .padding-top-75 {
   padding-top: 75px;
+}
+
+.stage-margin-right {
+
+  .unique-block {
+
+    .stage {
+      margin-right: 78px;
+    }
+  }
+}
+
+.numeral-margin-right {
+
+  .unique-block {
+
+    .numeral {
+      margin-right: 50px;
+    }
+  }
+}
+
+.img-margin-right {
+
+  .unique-block {
+
+    img {
+      margin-right: 20px;
+    }
+  }
 }
 
 .input-50 {
@@ -206,30 +328,11 @@ h6 {
   left: 40px;
 }
 
-.btn {
-  padding: 10px;
-  background: transparent;
-  border: none;
-  position: relative;
-
-  a {
-    color: #003DBB;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 1px;
-
-    &:hover {
-      color: #27dfe5;
+.after-none {
+  li {
+    &:after {
+      display: none;
     }
-  }
-
-  span {
-    position: absolute;
-    background: #003DBB;
-    width: 100px;
-    height: 2px;
-    bottom: 7px;
-    right: 1px;
   }
 }
 
@@ -286,6 +389,14 @@ h6 {
       display: block;
       margin-left: -9px;
     }
+  }
+
+  .stage {
+    font-size: 20px;
+    line-height: 22px;
+    color: #fff;
+    transform: rotate(-90deg);
+    margin-left: -60px;
   }
 }
 

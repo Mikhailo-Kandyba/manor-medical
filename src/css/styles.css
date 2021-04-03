@@ -92,6 +92,45 @@ h6 {
     max-width: 100%;
     padding: 0 15px; }
 
+.unique-block-background-1 .unique-block {
+  background: #36CDC6; }
+
+.unique-block-background-2 .unique-block {
+  background: #70B854; }
+
+.unique-block-background-3 .unique-block {
+  background: #E74A53; }
+
+.unique-block-background-4 .unique-block {
+  background: #00ADEF; }
+
+.unique-block-xl .unique-area {
+  padding-left: 0; }
+  .unique-block-xl .unique-area .unique-block {
+    max-width: none;
+    padding: 40px 10px; }
+
+.list-flex li {
+  flex-direction: column; }
+
+.unique-width .unique-area {
+  width: 25%; }
+
+.unique-text-margin-left .unique-area .unique-text {
+  border: none;
+  margin-left: 0; }
+  .unique-text-margin-left .unique-area .unique-text p {
+    max-width: none;
+    margin: 0; }
+
+.unique-list-sm {
+  max-width: 665px;
+  margin-bottom: 13px; }
+  .unique-list-sm .service {
+    padding-left: 30px;
+    padding-right: 0;
+    margin-bottom: 0; }
+
 .unique-list {
   display: flex;
   flex-wrap: wrap; }
@@ -106,6 +145,15 @@ h6 {
     padding-left: 30px;
     padding-right: 10px;
     margin-bottom: 80px; }
+    .unique-list li:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #27dfe5;
+      border-bottom-left-radius: 60px;
+      position: absolute;
+      top: 10px;
+      left: 0; }
 
 .border-radius-60 {
   border-bottom-left-radius: 60px;
@@ -123,6 +171,15 @@ h6 {
 
 .padding-top-75 {
   padding-top: 75px; }
+
+.stage-margin-right .unique-block .stage {
+  margin-right: 78px; }
+
+.numeral-margin-right .unique-block .numeral {
+  margin-right: 50px; }
+
+.img-margin-right .unique-block img {
+  margin-right: 20px; }
 
 .input-50 .form-group input {
   padding: 23px 10px 15px 12px; }
@@ -166,25 +223,8 @@ h6 {
   top: 30%;
   left: 40px; }
 
-.btn {
-  padding: 10px;
-  background: transparent;
-  border: none;
-  position: relative; }
-  .btn a {
-    color: #003DBB;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 1px; }
-    .btn a:hover {
-      color: #27dfe5; }
-  .btn span {
-    position: absolute;
-    background: #003DBB;
-    width: 100px;
-    height: 2px;
-    bottom: 7px;
-    right: 1px; }
+.after-none li:after {
+  display: none; }
 
 .unique-list {
   display: flex;
@@ -229,6 +269,12 @@ h6 {
       color: #fff;
       display: block;
       margin-left: -9px; }
+  .unique-block .stage {
+    font-size: 20px;
+    line-height: 22px;
+    color: #fff;
+    transform: rotate(-90deg);
+    margin-left: -60px; }
 
 .unique-area {
   display: flex;
@@ -248,6 +294,30 @@ h6 {
   max-width: 1280px;
   padding: 0 15px;
   width: 100%; }
+
+.holder-btn {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  position: relative; }
+  .btn a {
+    color: #003DBB;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px; }
+    .btn a:hover {
+      color: #27dfe5; }
+  .btn span {
+    position: absolute;
+    background: #003DBB;
+    width: 100px;
+    height: 2px;
+    bottom: 7px;
+    right: 1px; }
 
 .menu-btn {
   display: none;
@@ -384,10 +454,6 @@ h6 {
       line-height: 22px;
       color: #fff; }
 
-.holder-btn {
-  display: flex;
-  justify-content: flex-end; }
-
 .sentence {
   display: flex;
   justify-content: space-between;
@@ -426,7 +492,8 @@ h6 {
   display: flex;
   justify-content: space-around;
   border: solid 1px #c5c5c5;
-  padding: 25px 0 0 30px; }
+  padding: 25px 0 0 30px;
+  margin-bottom: 174px; }
   .request .text-request {
     max-width: 650px;
     padding-top: 20px; }
@@ -462,3 +529,38 @@ h6 {
       padding: 0; }
     .form-group-checkbox .form-group-2 label {
       color: #787878; }
+
+.program-stages h3 {
+  font-size: 60px;
+  line-height: 75px;
+  color: #303030;
+  letter-spacing: 9px;
+  margin-bottom: 40px; }
+
+.program-stages .text-btn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 885px;
+  margin-bottom: 43px; }
+  .program-stages .text-btn p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #303030;
+    max-width: 545px; }
+
+.text-decor {
+  display: flex; }
+  .text-decor .holder-text {
+    margin-right: 60px; }
+    .text-decor .holder-text p {
+      max-width: 526px;
+      font-size: 18px;
+      line-height: 25px; }
+  .text-decor .holder-area {
+    display: flex;
+    flex-direction: column; }
+
+.service p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000; }
