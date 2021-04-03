@@ -124,6 +124,9 @@ h6 {
 .padding-top-75 {
   padding-top: 75px; }
 
+.input-50 .form-group input {
+  padding: 23px 10px 15px 12px; }
+
 .decor {
   position: absolute;
   width: 170px;
@@ -405,15 +408,57 @@ h6 {
 .holder-img {
   position: relative; }
 
-.terms h3 {
-  font-size: 35px;
-  line-height: 65px;
-  letter-spacing: 2px; }
-
-.terms p {
-  font-size: 18px;
-  line-height: 25px; }
+.terms {
+  margin-bottom: 40px; }
+  .terms h3 {
+    font-size: 35px;
+    line-height: 65px;
+    letter-spacing: 2px; }
+  .terms p {
+    font-size: 18px;
+    line-height: 25px; }
 
 .holder-area {
   display: flex;
   justify-content: space-between; }
+
+.request {
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px #c5c5c5;
+  padding: 25px 0 0 30px; }
+  .request .text-request {
+    max-width: 650px;
+    padding-top: 20px; }
+    .request .text-request h3 {
+      font-size: 35px;
+      line-height: 40px;
+      letter-spacing: 3px;
+      margin-bottom: 14px; }
+    .request .text-request p {
+      font-size: 18px;
+      line-height: 25px; }
+
+.contact-form {
+  max-width: 400px; }
+
+.form-group {
+  margin-bottom: 15px; }
+  .form-group input {
+    font-size: 13px;
+    line-height: 13px;
+    border: 1px solid #C5C5C5;
+    width: 100%;
+    height: 40px;
+    padding: 23px 200px 15px 12px; }
+
+.form-group-checkbox {
+  display: flex;
+  align-items: baseline; }
+  .form-group-checkbox .form-group-2 {
+    padding-left: 15px; }
+    .form-group-checkbox .form-group-2 input {
+      height: 10px;
+      padding: 0; }
+    .form-group-checkbox .form-group-2 label {
+      color: #787878; }
