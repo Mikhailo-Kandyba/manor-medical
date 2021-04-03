@@ -118,7 +118,7 @@ h6 {
 
 .unique-text-margin-left .unique-area .unique-text {
   border: none;
-  margin-left: 0; }
+  margin-left: 40px; }
   .unique-text-margin-left .unique-area .unique-text p {
     max-width: none;
     margin: 0; }
@@ -130,6 +130,10 @@ h6 {
     padding-left: 30px;
     padding-right: 0;
     margin-bottom: 0; }
+
+.unique-margin-bottom .unique-area {
+  margin-bottom: 0;
+  padding-left: 10px; }
 
 .unique-list {
   display: flex;
@@ -162,6 +166,9 @@ h6 {
 
 .border-radius-30 {
   border-bottom-left-radius: 30px; }
+
+.border-radius-15 {
+  border-bottom-left-radius: 15px; }
 
 .padding-left-49 {
   padding-left: 49px; }
@@ -214,6 +221,12 @@ h6 {
   left: -30px;
   bottom: auto;
   right: auto; }
+
+.position-3 {
+  position: absolute;
+  top: 35px;
+  right: -37px;
+  left: auto; }
 
 .decor-2 {
   position: absolute;
@@ -288,6 +301,21 @@ h6 {
     .unique-area .unique-text p {
       max-width: 205px;
       margin: 10px 93px; }
+
+.list-display-block {
+  display: block;
+  max-width: 580px; }
+
+.numeral-sm .unique-block {
+  height: 45px; }
+  .numeral-sm .unique-block .numeral {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 23px;
+    margin-right: 23px; }
+
+.unique-width-100 .unique-area {
+  width: 100%; }
 
 .container {
   margin: 0 auto;
@@ -530,23 +558,24 @@ h6 {
     .form-group-checkbox .form-group-2 label {
       color: #787878; }
 
-.program-stages h3 {
-  font-size: 60px;
-  line-height: 75px;
-  color: #303030;
-  letter-spacing: 9px;
-  margin-bottom: 40px; }
-
-.program-stages .text-btn {
-  display: flex;
-  justify-content: space-between;
-  max-width: 885px;
-  margin-bottom: 43px; }
-  .program-stages .text-btn p {
-    font-size: 18px;
-    line-height: 25px;
+.program-stages {
+  margin-bottom: 65px; }
+  .program-stages h3 {
+    font-size: 60px;
+    line-height: 75px;
     color: #303030;
-    max-width: 545px; }
+    letter-spacing: 9px;
+    margin-bottom: 40px; }
+  .program-stages .text-btn {
+    display: flex;
+    justify-content: space-between;
+    max-width: 885px;
+    margin-bottom: 43px; }
+    .program-stages .text-btn p {
+      font-size: 18px;
+      line-height: 25px;
+      color: #303030;
+      max-width: 545px; }
 
 .text-decor {
   display: flex; }
@@ -564,3 +593,46 @@ h6 {
   font-size: 18px;
   line-height: 30px;
   color: #000; }
+
+.payment-guarantees h3 {
+  font-size: 60px;
+  line-height: 65px;
+  color: #303030;
+  margin-bottom: 42px; }
+
+.holder-offers {
+  display: flex; }
+  .holder-offers .img-area {
+    position: relative; }
+    .holder-offers .img-area .mask-holder {
+      background: url("../images/mask.png");
+      background-position: bottom right;
+      background-size: 695px 415px;
+      background-repeat: no-repeat;
+      min-height: 400px;
+      margin-top: -30px;
+      width: 670px;
+      padding: 80px 0 0 60px; }
+      .holder-offers .img-area .mask-holder h4 {
+        font-size: 35px;
+        line-height: 40px;
+        color: #303030;
+        letter-spacing: 3px;
+        margin-bottom: 12px; }
+      .holder-offers .img-area .mask-holder h3 {
+        font-size: 60px;
+        line-height: 40px;
+        color: #303030;
+        letter-spacing: 4px;
+        margin-bottom: 50px; }
+      .holder-offers .img-area .mask-holder p {
+        font-size: 18px;
+        line-height: 25px;
+        color: #303030;
+        margin-bottom: 11px; }
+      .holder-offers .img-area .mask-holder .holder-btn {
+        display: flex;
+        justify-content: end; }
+    .holder-offers .img-area .decoration {
+      position: relative;
+      z-index: -2; }

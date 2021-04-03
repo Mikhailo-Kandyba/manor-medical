@@ -171,7 +171,7 @@ h6 {
 
     .unique-text {
       border: none;
-      margin-left: 0;
+      margin-left: 40px;
 
       p {
         max-width: none;
@@ -189,6 +189,14 @@ h6 {
     padding-left: 30px;
     padding-right: 0;
     margin-bottom: 0;
+  }
+}
+
+.unique-margin-bottom {
+
+  .unique-area {
+    margin-bottom: 0;
+    padding-left: 10px;
   }
 }
 
@@ -229,6 +237,10 @@ h6 {
 
 .border-radius-30 {
   border-bottom-left-radius: 30px;
+}
+
+.border-radius-15 {
+  border-bottom-left-radius: 15px;
 }
 
 .padding-left-49 {
@@ -317,6 +329,13 @@ h6 {
   left: -30px;
   bottom: auto;
   right: auto;
+}
+
+.position-3 {
+  position: absolute;
+  top: 35px;
+  right: -37px;
+  left: auto;
 }
 
 .decor-2 {
@@ -415,6 +434,32 @@ h6 {
       max-width: 205px;
       margin: 10px 93px;
     }
+  }
+}
+
+.list-display-block {
+  display: block;
+  max-width: 580px;
+}
+
+.numeral-sm {
+
+  .unique-block {
+    height: 45px;
+
+    .numeral {
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 23px;
+      margin-right: 23px;
+    }
+  }
+}
+
+.unique-width-100 {
+
+  .unique-area {
+    width: 100%;
   }
 }
 
