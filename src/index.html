@@ -3,9 +3,12 @@
     <title>Manor Medical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery.selectric.js">
+    <link rel="stylesheet" href="css/selectric.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
@@ -39,15 +42,14 @@
                             <a href="#">О компании</a>
                         </li>
                         <li class="tel">
-                            <a href="#">Контакты</a>
+                            <span>Контакты</span>
                             <a href="tel:+380678623635">+38 067 862 36 35</a>
                         </li>
                         <li>
                             <form action="#">
                                 <fieldset>
-                                    <label for="salutation"></label>
-                                    <select name="salutation" id="salutation">
-                                        <option disabled selected>RU</option>
+                                    <select name="select" id="select">
+                                        <option selected>RU</option>
                                         <option>UA</option>
                                         <option>ENG</option>
                                     </select>
@@ -237,7 +239,7 @@
                             <span></span>
                         </button>
                     </div>
-                    <ul class="unique-list list-flex unique-width unique-block-xl unique-text-margin-left after-none">
+                    <ul class="unique-list list-flex unique-width unique-block-xl unique-text-margin-left after-none padding-top-10">
                         <li class="unique-area unique-block-background-1 stage-margin-right img-margin-right">
                             <div class="unique-block border-radius-30 ">
                                 <strong class="numeral">01</strong>
@@ -306,7 +308,7 @@
                             </p>
                         </div>
                         <div class="holder-area">
-                            <ul class="unique-list unique-list-sm">
+                            <ul class="unique-list unique-list-sm padding-top-0">
                                 <li class="service">
                                     <p>
                                         Транспортные расходы
@@ -339,7 +341,7 @@
                         ОПЛАТА И ГАРАНТИИ
                     </h3>
                     <div class="holder-offers">
-                        <ul class="unique-list list-display-block unique-margin-bottom unique-text-margin-left after-none unique-width-100">
+                        <ul class="unique-list list-display-block unique-margin-bottom unique-text-margin-left after-none unique-width-100 padding-top-0 padding-20-0">
                             <li class="unique-area numeral-sm">
                                 <div class="unique-block border-radius-15">
                                     <strong class="numeral">01</strong>
@@ -366,7 +368,8 @@
                                 </div>
                                 <div class="unique-text">
                                     <p>
-                                        Все расходы покрываются нами сразу же и выплачиваются после предъявления подтверждающих документов
+                                        Каждый донор получает вознаграждение в последний день программы,
+                                        после проведения пункции яичников и забора яйцеклеток
                                     </p>
                                 </div>
                             </li>
@@ -486,6 +489,120 @@
                     </div>
                 </div>
             </section>
+            <section class="container">
+                <div class="answers">
+                    <h3>
+                        ОТВЕЧАЕМ НА ВАШИ ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                    </h3>
+                    <div class="response-cell border-radius-30">
+                        <div class="wrapper">
+                            <div class="holder-photo">
+                                <img src="../images/answers-photo.png" alt="photo">
+                            </div>
+                            <div class="customer-data">
+                                <h3>
+                                    На ваши вопросы отвечает:
+                                </h3>
+                                <p>
+                                    професор Иванова Иванна Ивановна,
+                                    руководитель программы донации яйцеклеток Manor Medical
+                                </p>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="guestions-area">
+                        <div id="questions-holder">
+                            <h5 class="border-radius-20">
+                                Рыбатекст используется дизайнерами, фронтендерами  когда нужно быстро заполнить макеты осмысленным текстом?
+                            </h5>
+                            <div>
+                                <div class="response-cell border-radius-30">
+                                    <div class="wrapper">
+                                        <div class="holder-photo">
+                                            <img src="../images/answers-photo.png" alt="photo">
+                                        </div>
+                                        <div class="customer-data">
+                                            <h3>
+                                                На ваши вопросы отвечает:
+                                            </h3>
+                                            <p>
+                                                професор Иванова Иванна Ивановна,
+                                                руководитель программы донации яйцеклеток Manor Medical
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>
+                                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="border-radius-20">
+                                Рыбатекст используется дизайнерами, фронтендерами  когда нужно быстро заполнить макеты осмысленным текстом?
+                            </h3>
+                            <div>
+                                <div class="response-cell border-radius-30">
+                                    <div class="wrapper">
+                                        <div class="holder-photo">
+                                            <img src="../images/answers-photo.png" alt="photo">
+                                        </div>
+                                        <div class="customer-data">
+                                            <h3>
+                                                На ваши вопросы отвечает:
+                                            </h3>
+                                            <p>
+                                                професор Иванова Иванна Ивановна,
+                                                руководитель программы донации яйцеклеток Manor Medical
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>
+                                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="border-radius-20">
+                                Рыбатекст используется дизайнерами, фронтендерами  когда нужно быстро заполнить макеты осмысленным текстом?
+                            </h5>
+                            <div>
+                                <div class="response-cell border-radius-30">
+                                    <div class="wrapper">
+                                        <div class="holder-photo">
+                                            <img src="../images/answers-photo.png" alt="photo">
+                                        </div>
+                                        <div class="customer-data">
+                                            <h3>
+                                                На ваши вопросы отвечает:
+                                            </h3>
+                                            <p>
+                                                професор Иванова Иванна Ивановна,
+                                                руководитель программы донации яйцеклеток Manor Medical
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>
+                                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <section class="container">
@@ -497,13 +614,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.selectric.min.js"></script>
+    <script>
+        $( function() {
+            $( "#questions-holder" ).accordion();
+        } );
+    </script>
     <script>
         $('.feedback-slider').slick();
     </script>
     <script>
-        $( function() {
-            $( "#salutation" ).selectmenu();
-        } );
+        $(function() {
+            $('select').selectric();
+        });
     </script>
     <script>
         $('.menu-btn').on('click',function(e){
