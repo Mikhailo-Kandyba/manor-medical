@@ -347,6 +347,7 @@
 }
 
 .payment-guarantees {
+  margin-bottom: 140px;
 
   h3 {
     font-size: 60px;
@@ -404,6 +405,81 @@
     .decoration {
       position: relative;
       z-index: -2;
+    }
+  }
+}
+
+.donor-feedback {
+  
+  h3 {
+    font-size: 60px;
+    line-height: 65px;
+    color: #151515;
+    margin-bottom: 53px;
+    letter-spacing: 7px;
+  }
+
+  .text-btn {
+    max-width: 385px;
+    margin-right: 55px;
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      color: #000;
+      margin-bottom: 31px;
+    }
+  }
+
+  .holder-btn {
+    justify-content: end;
+  }
+}
+
+.holder-feedback {
+  display: flex;
+}
+
+.review {
+  border: solid 1px #C5C5C5;
+  padding: 35px 40px 53px;
+  margin-bottom: 17px;
+
+  p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+  }
+}
+
+.client {
+  display: flex;
+
+  .holder-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #DDD;
+    height: 80px;
+    width: 80px;
+  }
+
+  .customer-data {
+    margin: 15px 0 10px 33px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
+      color: #000;
+      letter-spacing: 0;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #ADADAD;
     }
   }
 }

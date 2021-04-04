@@ -43,18 +43,16 @@
                             <a href="tel:+380678623635">+38 067 862 36 35</a>
                         </li>
                         <li>
-                            <div class="demo">
-                                <form action="#">
-                                    <fieldset>
-                                        <label for="salutation"></label>
-                                        <select name="salutation" id="salutation">
-                                            <option disabled selected>RU</option>
-                                            <option>UA</option>
-                                            <option>ENG</option>
-                                        </select>
-                                    </fieldset>
-                                </form>
-                            </div>
+                            <form action="#">
+                                <fieldset>
+                                    <label for="salutation"></label>
+                                    <select name="salutation" id="salutation">
+                                        <option disabled selected>RU</option>
+                                        <option>UA</option>
+                                        <option>ENG</option>
+                                    </select>
+                                </fieldset>
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -420,6 +418,74 @@
                     </div>
                 </div>
             </section>
+            <section class="container">
+                <div class="donor-feedback">
+                    <h3>
+                        ОТЗЫВЫ ДОНОРОВ
+                    </h3>
+                    <div class="holder-feedback">
+                        <div class="text-btn">
+                            <p>
+                                Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                                когда нужно быстро заполнить макеты или прототипы содержимым.
+                                Это тестовый контент, который не должен
+                            </p>
+                            <div class="holder-btn">
+                                <button class="btn">
+                                    <a href="#">Смотреть все отзывы</a>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="review border-radius-30">
+                                    <p>
+                                        Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                                        когда нужно быстро заполнить макеты или прототипы содержимым.
+                                        Это тестовый контент, который не должен
+                                    </p>
+                                </div>
+                                <div class="client">
+                                    <div class="holder-photo">
+                                        <img src="../images/client.png" alt="client">
+                                    </div>
+                                    <div class="customer-data">
+                                        <h3>
+                                            Иванна Иванова
+                                        </h3>
+                                        <p>
+                                            35 лет
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="review border-radius-30">
+                                    <p>
+                                        Рыбатекст используется дизайнерами, проектировщиками и фронтендерами,
+                                        когда нужно быстро заполнить макеты или прототипы содержимым.
+                                        Это тестовый контент, который не должен
+                                    </p>
+                                </div>
+                                <div class="client">
+                                    <div class="holder-photo">
+                                        <img src="../images/client.png" alt="client">
+                                    </div>
+                                    <div class="customer-data">
+                                        <h3>
+                                            Иванна Иванова
+                                        </h3>
+                                        <p>
+                                            35 лет
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <section class="container">
@@ -429,7 +495,11 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $('.feedback-slider').slick();
+    </script>
     <script>
         $( function() {
             $( "#salutation" ).selectmenu();
