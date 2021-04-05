@@ -683,7 +683,8 @@ h6 {
     justify-content: end; }
 
 .holder-feedback {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .review {
   border: solid 1px #C5C5C5;
@@ -848,6 +849,29 @@ h6 {
     position: absolute;
     top: 0;
     right: 0; }
+
+.feedback-slider {
+  max-width: 700px;
+  position: relative; }
+  .feedback-slider .slick-slide {
+    padding: 0 15px; }
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: -60px;
+  left: 0;
+  z-index: 5;
+  border: none; }
+
+.slick-prev {
+  left: 0; }
+
+.slick-next {
+  right: 0;
+  left: auto; }
 
 .about-the-clinic {
   margin-bottom: 87px; }
