@@ -256,7 +256,7 @@
   height: 325px;
   background: #BBBCBE;
   top: 28%;
-  left: 40px;
+  left: 14px;
 }
 
 .after-none {
@@ -276,6 +276,7 @@
   background: #36CDC6;
   position: relative;
   z-index: 1;
+  width: 100%;
 
   .numeral {
     display: block;
@@ -339,6 +340,7 @@
 
   .unique-block {
     height: 45px;
+    width: 12%;
 
     .numeral {
       font-size: 18px;

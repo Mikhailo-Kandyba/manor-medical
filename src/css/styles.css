@@ -242,7 +242,7 @@ h6 {
   height: 325px;
   background: #BBBCBE;
   top: 28%;
-  left: 40px; }
+  left: 14px; }
 
 .after-none li:after {
   display: none; }
@@ -255,7 +255,8 @@ h6 {
   max-width: 197px;
   background: #36CDC6;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%; }
   .unique-block .numeral {
     display: block;
     color: #fff;
@@ -299,7 +300,8 @@ h6 {
   max-width: 580px; }
 
 .numeral-sm .unique-block {
-  height: 45px; }
+  height: 45px;
+  width: 12%; }
   .numeral-sm .unique-block .numeral {
     font-size: 18px;
     line-height: 22px;
@@ -425,9 +427,6 @@ h6 {
   align-items: center;
   justify-content: space-between; }
 
-.logo {
-  margin-right: 63px; }
-
 .navigation {
   display: flex;
   align-items: center; }
@@ -494,7 +493,7 @@ h6 {
   color: #fff;
   max-width: 440px;
   padding: 17px 0 17px 25px;
-  margin-bottom: 100px;
+  margin: 31px 0 70px 13px;
   position: relative; }
   .block-50:after {
     position: absolute;
@@ -530,7 +529,7 @@ h6 {
   .terms h3 {
     font-size: 35px;
     line-height: 65px;
-    letter-spacing: 2px; }
+    letter-spacing: 1px; }
   .terms p {
     line-height: 25px; }
 
@@ -592,7 +591,7 @@ h6 {
     font-size: 60px;
     line-height: 75px;
     color: #303030;
-    letter-spacing: 9px;
+    letter-spacing: 5px;
     margin-bottom: 40px; }
   .program-stages .text-btn {
     display: flex;
@@ -688,7 +687,7 @@ h6 {
 
 .review {
   border: solid 1px #C5C5C5;
-  padding: 35px 30px 53px;
+  padding: 35px 30px 3px;
   margin-bottom: 17px; }
   .review p {
     line-height: 25px;
@@ -771,8 +770,8 @@ h6 {
   top: 50%;
   right: 20px;
   font-size: 20px;
-  margin-top: -20px;
-  padding: 10px;
+  margin-top: -25px;
+  padding: 8px 10px;
   border: 1px solid #fff;
   border-radius: 5px; }
 
@@ -783,9 +782,6 @@ h6 {
   padding-bottom: 17px;
   border-bottom: dotted 1px #f4f4f4;
   text-align: left; }
-
-.ui-accordion-header-active .ui-icon:before {
-  content: "-"; }
 
 .accordion-answers {
   width: 50%;
@@ -799,7 +795,7 @@ h6 {
   color: #fff;
   padding: 13px 90px 21px 40px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   cursor: pointer;
   width: 100%; }
   .ui-accordion .ui-accordion-header:focus {
@@ -837,18 +833,20 @@ h6 {
 
 .holder-photo-consultation {
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-bottom: 37px; }
   .holder-photo-consultation .request {
     padding: 12px 0 55px 30px;
     z-index: 5;
-    position: relative; }
+    position: relative;
+    margin-top: 39px; }
     .holder-photo-consultation .request .contact-form {
       max-width: 460px;
       width: 100%; }
   .holder-photo-consultation > img {
     position: absolute;
-    top: 0;
-    right: 0; }
+    top: 5px;
+    right: -36px; }
 
 .feedback-slider {
   max-width: 700px;
@@ -858,20 +856,48 @@ h6 {
 
 .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 0;
   height: 50px;
   width: 50px;
-  margin-top: -60px;
+  margin-top: -70px;
   left: 0;
   z-index: 5;
   border: none; }
 
 .slick-prev {
-  left: 0; }
+  left: auto;
+  right: 7%;
+  background: transparent;
+  font-size: 0; }
+  .slick-prev:after {
+    content: '<';
+    width: 17px;
+    height: 33px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    font-size: 30px;
+    color: #C5C5C5;
+    border: solid 1px #C5C5C5;
+    padding: 5px 10px;
+    border-radius: 5px; }
 
 .slick-next {
   right: 0;
-  left: auto; }
+  left: auto;
+  background: transparent;
+  font-size: 0; }
+  .slick-next:before {
+    content: '>';
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 0;
+    font-size: 30px;
+    color: #C5C5C5;
+    border: solid 1px #C5C5C5;
+    padding: 5px 10px;
+    border-radius: 5px; }
 
 .about-the-clinic {
   margin-bottom: 87px; }
@@ -885,8 +911,8 @@ h6 {
   margin-bottom: 32px; }
 
 .background-photo {
-  margin-bottom: 73px;
-  max-height: 400px;
+  margin-bottom: 83px;
+  max-height: 607px;
   overflow: hidden; }
   .background-photo img {
     width: 100%; }
