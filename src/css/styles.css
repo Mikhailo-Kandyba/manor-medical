@@ -87,6 +87,8 @@ h6 {
     flex-grow: 1;
     max-width: 100%;
     padding: 0 15px; }
+  .row .padding-left-120 {
+    padding-left: 120px; }
 
 .unique-block-background-1 .unique-block {
   background: #36CDC6; }
@@ -313,6 +315,18 @@ h6 {
 .padding-20-0 .unique-area .unique-text {
   padding: 20px 0; }
 
+.background-fff {
+  background: #fff; }
+
+.width-605 {
+  max-width: 605px; }
+
+.padding-0-20 {
+  padding: 12px 20px 30px; }
+
+.top-70 {
+  top: -70px; }
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -475,13 +489,25 @@ h6 {
 .speaker-2 {
   position: relative; }
   .speaker-2 .block-50 {
-    background: #0F40B7;
-    max-width: 524px;
-    margin-bottom: 65px; }
+    background: #0F40B7; }
     .speaker-2 .block-50 p {
       font-size: 17px;
       line-height: 22px;
-      color: #fff; }
+      color: #fff;
+      max-width: 440px;
+      padding: 17px 0 17px 25px; }
+
+#block1 {
+  margin: 90px;
+  width: 285px;
+  height: 0; }
+
+#block2 {
+  width: 900px;
+  height: 100px;
+  position: relative;
+  top: -58px;
+  left: -76px; }
 
 .sentence {
   display: flex;
@@ -532,6 +558,12 @@ h6 {
       margin-bottom: 11px; }
     .request .text-request p {
       line-height: 25px; }
+
+.display-flex {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
 
 .contact-form {
   max-width: 400px; }
@@ -692,35 +724,38 @@ h6 {
   font-size: 60px;
   line-height: 65px;
   color: #151515;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-bottom: 60px; }
 
-.response-cell {
+.answers .response-cell {
   border: solid 1px #C5C5C5;
   max-width: 630px;
-  padding: 5px 10px 10px 6px; }
-  .response-cell .wrapper {
+  padding: 5px 10px 38px 6px; }
+  .answers .response-cell .wrapper {
     display: flex; }
-  .response-cell .customer-data {
+  .answers .response-cell .customer-data {
     padding: 8px 10px 10px 26px;
     margin-bottom: 30px; }
-    .response-cell .customer-data h3 {
+    .answers .response-cell .customer-data h3 {
       font-size: 14px;
       line-height: 25px;
       color: #000;
-      letter-spacing: 0; }
-    .response-cell .customer-data p {
+      letter-spacing: 0;
+      margin-bottom: -3px; }
+    .answers .response-cell .customer-data p {
       font-size: 14px;
       line-height: 17px;
       color: #000;
       letter-spacing: 1px; }
-  .response-cell .answer {
-    padding: 0 16px 13px 32px; }
-    .response-cell .answer p {
-      line-height: 25px;
-      color: #000; }
 
-.guestions-area {
-  width: 50%; }
+.answer-holder {
+  padding: 0 16px 13px 32px; }
+  .answer-holder p {
+    line-height: 25px;
+    color: #000; }
+
+.holder-accordion {
+  display: flex; }
 
 .ui-icon {
   position: absolute;
@@ -731,14 +766,19 @@ h6 {
   text-indent: 0;
   overflow: visible; }
   .ui-icon:before {
-    color: #00bb53;
+    border: solid 1px #fff;
+    padding: 9px;
+    border-radius: 7px;
+    color: #fff;
     font-size: 30px;
     line-height: 20px;
-    content: "+";
+    content: ">";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 12px;
+    right: 14px;
     z-index: 1; }
+  .ui-icon:hover {
+    cursor: pointer; }
 
 .ui-accordion-header-active p {
   font-size: 14px;
@@ -757,13 +797,16 @@ h6 {
   line-height: 25px;
   font-weight: bold;
   color: #fff;
-  padding: 13px 90px 0 40px; }
+  padding: 13px 90px 21px 40px;
+  position: relative;
+  margin-bottom: 10px; }
   .ui-accordion .ui-accordion-header:focus {
     outline: none; }
 
 .ui-accordion .ui-accordion-content {
   padding: 0;
-  border: none; }
+  border: none;
+  height: 292px; }
 
 .ui-button {
   background: none;
@@ -783,3 +826,166 @@ h6 {
     cursor: pointer; }
   #select:focus {
     outline: none; }
+
+.padding {
+  padding: 12px 0 55px 30px; }
+
+.padding-34 .text-request {
+  padding-top: 60px; }
+
+.holder-photo-consultation {
+  display: flex; }
+
+.about-the-clinic {
+  margin-bottom: 87px; }
+  .about-the-clinic h3 {
+    font-size: 60px;
+    line-height: 65px;
+    color: #151515;
+    margin-bottom: 45px; }
+
+.margin-bottom {
+  margin-bottom: 32px; }
+
+.background-photo {
+  margin-bottom: 73px; }
+
+.progress {
+  margin-bottom: 195px; }
+  .progress h3 {
+    font-size: 35px;
+    line-height: 65px;
+    color: #151515;
+    margin-bottom: 33px; }
+  .progress .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .progress .wrapper .text-btn {
+      max-width: 523px; }
+      .progress .wrapper .text-btn p {
+        margin-bottom: 17px; }
+      .progress .wrapper .text-btn .holder-btn {
+        justify-content: end; }
+
+.list-numbers {
+  display: flex; }
+  .list-numbers .list {
+    margin-left: 60px; }
+    .list-numbers .list .holder {
+      display: flex;
+      align-items: baseline; }
+      .list-numbers .list .holder .numbers {
+        display: block;
+        font-size: 120px;
+        line-height: 115px;
+        color: #36CDC6; }
+      .list-numbers .list .holder .year {
+        line-height: 22px;
+        color: #436EB3;
+        margin-left: -30px;
+        background: #fff; }
+      .list-numbers .list .holder P {
+        line-height: 25px;
+        color: #303030; }
+      .list-numbers .list .holder .margin-left-0 {
+        margin-left: 0; }
+      .list-numbers .list .holder .margin-left-117 {
+        margin-left: -149px;
+        padding: 0 10px 0 55px; }
+
+.width-140 {
+  max-width: 140px; }
+
+.width-105 {
+  max-width: 105px; }
+
+.width-280 {
+  max-width: 280px; }
+
+.contacts-map {
+  display: flex; }
+
+.contacts h3 {
+  font-size: 60px;
+  line-height: 73px;
+  color: #151515;
+  margin-bottom: 40px; }
+
+.contacts .contacts-list h3 {
+  font-size: 20px;
+  line-height: 22px;
+  color: #003DBB;
+  margin-bottom: 14px; }
+
+.contacts .contacts-list p {
+  line-height: 25px; }
+
+.contacts .contacts-list .address {
+  margin-bottom: 46px; }
+  .contacts .contacts-list .address address {
+    font-style: inherit; }
+    .contacts .contacts-list .address address:hover {
+      color: #003DBB;
+      cursor: pointer; }
+
+.contacts .contacts-list .e-mail {
+  margin-bottom: 34px; }
+
+.contacts .contacts-list .social-network .icons {
+  display: flex; }
+  .contacts .contacts-list .social-network .icons li {
+    margin-right: 30px; }
+    .contacts .contacts-list .social-network .icons li i {
+      color: #36CDC6;
+      font-size: 32px;
+      cursor: pointer; }
+      .contacts .contacts-list .social-network .icons li i:hover {
+        color: #003DBB; }
+
+.contacts .contacts-list .telephone {
+  margin-bottom: 35px; }
+  .contacts .contacts-list .telephone a {
+    display: block;
+    margin-bottom: 10px; }
+
+#block3 {
+  margin: 90px;
+  width: 285px;
+  height: 200px; }
+
+#block4 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -100px;
+  left: -120px; }
+
+.footer {
+  padding: 92px 0 0; }
+
+.logo-xl {
+  width: 285px; }
+
+.rights {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right; }
+  .rights p {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 14px; }
+    .rights p a {
+      text-decoration: underline; }
+      .rights p a:hover {
+        text-decoration: none; }
+
+.align-items-end {
+  align-items: end; }
+
+.margin-top-18 {
+  margin-top: 18px;
+  margin-bottom: 45px; }
+
+.nav-rights {
+  display: flex;
+  flex-direction: column; }

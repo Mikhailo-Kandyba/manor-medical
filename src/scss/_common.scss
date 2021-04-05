@@ -51,15 +51,29 @@
 
   .block-50 {
     background: #0F40B7;
-    max-width: 524px;
-    margin-bottom: 65px;
 
     p {
       font-size: 17px;
       line-height: 22px;
       color: #fff;
+      max-width: 440px;
+      padding: 17px 0 17px 25px;;
     }
   }
+}
+
+#block1 {
+  margin: 90px;
+  width: 285px;
+  height: 0;
+}
+
+#block2 {
+  width: 900px;
+  height: 100px;
+  position:relative;
+  top:-58px;
+  left: -76px;
 }
 
 .sentence {
@@ -132,6 +146,13 @@
       line-height: 25px;
     }
   }
+}
+
+.display-flex {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .contact-form {
@@ -365,49 +386,51 @@
     line-height: 65px;
     color: #151515;
     letter-spacing: 2px;
-  }
-}
-
-.response-cell {
-  border: solid 1px #C5C5C5;
-  max-width: 630px;
-  padding: 5px 10px 10px 6px;
-
-  .wrapper {
-    display: flex;
+    margin-bottom: 60px;
   }
 
-  .customer-data {
-    padding: 8px 10px 10px 26px;
-    margin-bottom: 30px;
+  .response-cell {
+    border: solid 1px #C5C5C5;
+    max-width: 630px;
+    padding: 5px 10px 38px 6px;
 
-    h3 {
-      font-size: 14px;
-      line-height: 25px;
-      color: #000;
-      letter-spacing: 0;
+    .wrapper {
+      display: flex;
     }
 
-    p {
-      font-size: 14px;
-      line-height: 17px;
-      color: #000;
-      letter-spacing: 1px;
-    }
-  }
+    .customer-data {
+      padding: 8px 10px 10px 26px;
+      margin-bottom: 30px;
 
-  .answer {
-    padding: 0 16px 13px 32px;
+      h3 {
+        font-size: 14px;
+        line-height: 25px;
+        color: #000;
+        letter-spacing: 0;
+        margin-bottom: -3px;
+      }
 
-    p {
-      line-height: 25px;
-      color: #000;
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        letter-spacing: 1px;
+      }
     }
   }
 }
 
-.guestions-area {
-  width: 50%;
+.answer-holder {
+  padding: 0 16px 13px 32px;
+
+  p {
+    line-height: 25px;
+    color: #000;
+  }
+}
+
+.holder-accordion {
+  display: flex;
 }
 
 .ui-icon {
@@ -420,14 +443,21 @@
   overflow: visible;
 
   &:before {
-    color: #00bb53;
+    border: solid 1px #fff;
+    padding: 9px;
+    border-radius: 7px;
+    color: #fff;
     font-size: 30px;
     line-height: 20px;
-    content: "+";
+    content: ">";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 12px;
+    right: 14px;
     z-index: 1;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -454,7 +484,9 @@
   line-height: 25px;
   font-weight: bold;
   color: #fff;
-  padding: 13px 90px 0 40px;
+  padding: 13px 90px 21px 40px;
+  position: relative;
+  margin-bottom: 10px;
 
   &:focus {
     outline: none;
@@ -464,6 +496,7 @@
 .ui-accordion .ui-accordion-content {
   padding: 0;
   border: none;
+  height: 292px;
 }
 
 .ui-button {
@@ -490,4 +523,250 @@
   &:focus {
     outline: none;
   }
+}
+
+.padding {
+  padding: 12px 0 55px 30px;
+}
+
+.padding-34 {
+
+  .text-request {
+    padding-top: 60px;
+  }
+}
+
+.holder-photo-consultation {
+  display: flex;
+}
+
+.about-the-clinic {
+  margin-bottom: 87px;
+
+  h3 {
+    font-size: 60px;
+    line-height: 65px;
+    color: #151515;
+    margin-bottom: 45px;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 32px;
+}
+
+.background-photo {
+  margin-bottom: 73px;
+}
+
+.progress {
+  margin-bottom: 195px;
+
+  h3 {
+    font-size: 35px;
+    line-height: 65px;
+    color: #151515;
+    margin-bottom: 33px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .text-btn {
+      max-width: 523px;
+
+      p {
+        margin-bottom: 17px;
+      }
+
+      .holder-btn {
+        justify-content: end;
+      }
+    }
+  }
+}
+
+.list-numbers {
+  display: flex;
+
+  .list {
+    margin-left: 60px;
+
+    .holder {
+      display: flex;
+      align-items: baseline;
+
+      .numbers {
+        display: block;
+        font-size: 120px;
+        line-height: 115px;
+        color: #36CDC6;
+      }
+
+      .year {
+        line-height: 22px;
+        color: #436EB3;
+        margin-left: -30px;
+        background: #fff;
+      }
+
+      P {
+        line-height: 25px;
+        color: #303030;
+      }
+
+      .margin-left-0 {
+        margin-left: 0;
+      }
+
+      .margin-left-117 {
+        margin-left: -149px;
+        padding: 0 10px 0 55px;
+      }
+    }
+  }
+}
+
+.width-140 {
+  max-width: 140px;
+}
+
+.width-105 {
+  max-width: 105px;
+}
+
+.width-280 {
+  max-width: 280px;
+}
+
+.contacts-map {
+  display: flex;
+}
+
+.contacts {
+
+  h3 {
+    font-size: 60px;
+    line-height: 73px;
+    color: #151515;
+    margin-bottom: 40px;
+  }
+
+  .contacts-list {
+
+    h3 {
+      font-size: 20px;
+      line-height: 22px;
+      color: #003DBB;
+      margin-bottom: 14px;
+    }
+
+    p {
+      line-height: 25px;
+    }
+
+    .address {
+      margin-bottom: 46px;
+
+      address {
+        font-style: inherit;
+
+        &:hover {
+          color: #003DBB;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .e-mail {
+      margin-bottom: 34px;
+    }
+
+    .social-network  {
+
+      .icons {
+        display: flex;
+
+        li {
+          margin-right: 30px;
+
+          i {
+            color: #36CDC6;
+            font-size: 32px;
+            cursor: pointer;
+
+            &:hover {
+              color: #003DBB;
+            }
+          }
+        }
+      }
+    }
+
+    .telephone {
+      margin-bottom: 35px;
+
+      a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+#block3 {
+  margin: 90px;
+  width: 285px;
+  height: 200px;
+}
+
+#block4 {
+  width: 100px;
+  height: 100px;
+  position:relative;
+  top:-100px;
+  left:-120px;
+}
+
+.footer {
+  padding: 92px 0 0;
+}
+
+.logo-xl {
+  width: 285px;
+}
+
+.rights {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+
+  p {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 14px;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+.margin-top-18 {
+  margin-top: 18px;
+  margin-bottom: 45px;
+}
+
+.nav-rights {
+  display: flex;
+  flex-direction: column;
 }
