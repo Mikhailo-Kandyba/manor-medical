@@ -48,32 +48,28 @@
 
 .speaker-2 {
   position: relative;
+}
 
-  .block-50 {
+.block-50 {
+  background: #0F40B7;
+  font-size: 17px;
+  line-height: 22px;
+  color: #fff;
+  max-width: 440px;
+  padding: 17px 0 17px 25px;
+  margin-bottom: 100px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: -3000px;
+    left: 0;
     background: #0F40B7;
-
-    p {
-      font-size: 17px;
-      line-height: 22px;
-      color: #fff;
-      max-width: 440px;
-      padding: 17px 0 17px 25px;;
-    }
+    z-index: -1;
   }
-}
-
-#block1 {
-  margin: 90px;
-  width: 285px;
-  height: 0;
-}
-
-#block2 {
-  width: 900px;
-  height: 100px;
-  position:relative;
-  top:-58px;
-  left: -76px;
 }
 
 .sentence {
@@ -168,7 +164,7 @@
     border: 1px solid #C5C5C5;
     width: 100%;
     height: 40px;
-    padding: 23px 200px 15px 12px;
+    padding: 15px;
   }
 }
 
@@ -391,7 +387,6 @@
 
   .response-cell {
     border: solid 1px #C5C5C5;
-    max-width: 630px;
     padding: 5px 10px 38px 6px;
 
     .wrapper {
@@ -431,33 +426,32 @@
 
 .holder-accordion {
   display: flex;
+  justify-content: space-between;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .ui-icon {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  font-size: 40px;
-  background-image: none !important;
-  text-indent: 0;
-  overflow: visible;
+  display: none;
+}
 
-  &:before {
-    border: solid 1px #fff;
-    padding: 9px;
-    border-radius: 7px;
-    color: #fff;
-    font-size: 30px;
-    line-height: 20px;
-    content: ">";
+.ui-accordion-header {
+  .fa {
     position: absolute;
-    top: 12px;
-    right: 14px;
-    z-index: 1;
-  }
-
-  &:hover {
-    cursor: pointer;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+    margin-top: -20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
   }
 }
 
@@ -478,6 +472,11 @@
   }
 }
 
+.accordion-answers {
+  width: 50%;
+  padding: 0 20px 0 0;
+}
+
 .ui-accordion .ui-accordion-header {
   background: #36CDC6;
   border: none;
@@ -487,6 +486,8 @@
   padding: 13px 90px 21px 40px;
   position: relative;
   margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
 
   &:focus {
     outline: none;
@@ -538,6 +539,24 @@
 
 .holder-photo-consultation {
   display: flex;
+  position: relative;
+
+  .request {
+    padding: 12px 0 55px 30px;
+    z-index: 5;
+    position: relative;
+
+    .contact-form {
+      max-width: 460px;
+      width: 100%;
+    }
+  }
+
+  > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .about-the-clinic {
@@ -557,6 +576,12 @@
 
 .background-photo {
   margin-bottom: 73px;
+  max-height: 400px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
 }
 
 .progress {

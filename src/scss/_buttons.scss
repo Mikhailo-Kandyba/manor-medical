@@ -9,7 +9,7 @@
   border: none;
   position: relative;
 
-  a {
+  span {
     color: #003DBB;
     font-size: 18px;
     line-height: 22px;
@@ -20,8 +20,9 @@
     }
   }
 
-  span {
+  &:after {
     position: absolute;
+    content: '';
     background: #003DBB;
     width: 100px;
     height: 2px;
