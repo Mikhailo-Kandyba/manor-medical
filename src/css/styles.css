@@ -405,7 +405,6 @@ h6 {
   height: 0; }
 
 .menu-btn-active span::before {
-  transform: rotate(45deg);
   background-color: #fff; }
 
 .menu-btn-active span::after {
@@ -1056,3 +1055,48 @@ h6 {
 .nav-rights {
   display: flex;
   flex-direction: column; }
+
+.modal {
+  max-width: 660px !important;
+  padding: 0 !important;
+  -webkit-box-shadow: none !important;
+  border-bottom-left-radius: 60px !important;
+  height: 520px !important; }
+
+.modal a.close-modal {
+  display: none !important; }
+
+.close-btn {
+  position: absolute;
+  top: 42px;
+  right: 40px;
+  z-index: 8;
+  height: 30px;
+  padding: 10px; }
+  .close-btn:before {
+    content: "";
+    height: 2px;
+    background-color: #222;
+    width: 31px;
+    position: absolute;
+    top: 7px;
+    left: -6px;
+    transform: rotate(45deg); }
+  .close-btn:after {
+    content: "";
+    height: 2px;
+    background-color: #222;
+    width: 31px;
+    position: absolute;
+    top: 7px;
+    left: -6px;
+    transform: rotate(-45deg); }
+
+.modal-content {
+  padding: 75px 0 0 0 !important; }
+  .modal-content .request {
+    border: none !important;
+    padding: 0 0 0 30px !important; }
+    .modal-content .request .text-request h3 {
+      letter-spacing: 0 !important;
+      font-size: 33px !important; }

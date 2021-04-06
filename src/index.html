@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -81,9 +82,9 @@
                             </p>
                         </div>
                         <div class="holder-btn">
-                            <button class="btn">
+                            <a class="btn" href="#sub-modal" rel="modal:open">
                                 <span>Стать донором</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div class="speaker-2">
@@ -1170,11 +1171,50 @@
                 </div>
             </section>
         </footer>
+        <div id="sub-modal" class="modal">
+            <a class="close-btn" href="#" rel="modal:close">
+            </a>
+            <div class="modal-content">
+                <div class="request display-flex background-fff width-605 ">
+                    <div class="text-request">
+                        <h3>
+                            ХОТИТЕ СТАТЬ ДОНОРОМ?
+                        </h3>
+                        <p class="padding-0-20">
+                            Оставляйте свою заявку и наш менеджер с вами свяжется в ближайшее время
+                        </p>
+                    </div>
+                    <form class="contact-form" action="#">
+                        <div class="form-group">
+                            <input type="text" id="Name" placeholder="Ваше имя" name="name" value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="tel" placeholder="Ваш телефон" name="tel" value="">
+                        </div>
+                        <div class="form-group-checkbox input-50">
+                            <div class="form-group">
+                                <input type="text" id="Subject" placeholder="Ваш возрвст" name="subject" value="">
+                            </div>
+                            <div class="form-group-2">
+                                <input type="checkbox" id="indeterminate">
+                                <label for="indeterminate">у меня есть дети</label>
+                            </div>
+                        </div>
+                        <div class="holder-btn">
+                            <button class="btn">
+                                <span>Записаться</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery.selectric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script>
       $(function() {
         $('#select').selectric();
@@ -1225,6 +1265,10 @@
           }
         ]
       });
+    </script>
+    <script>
+        $('#sub-modal').modal({
+        });
     </script>
 </body>
 </html>
