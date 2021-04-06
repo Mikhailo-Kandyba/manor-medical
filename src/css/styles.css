@@ -1100,3 +1100,175 @@ h6 {
     .modal-content .request .text-request h3 {
       letter-spacing: 0 !important;
       font-size: 33px !important; }
+
+@media (max-width: 1279px) {
+  .btn span {
+    font-size: 16px; }
+  .navigation li a {
+    font-size: 10px; }
+  .navigation li span {
+    font-size: 15px; }
+  .navigation li #select {
+    font-size: 12px; }
+  .banner {
+    margin-bottom: 110px; }
+  .img-area img {
+    max-width: 360px; }
+  .decor {
+    width: 120px;
+    height: 145px;
+    left: 20px; }
+  .holder-number {
+    margin-top: -10px;
+    margin-bottom: 35px; }
+    .holder-number .number {
+      font-size: 100px;
+      letter-spacing: 3px; }
+    .holder-number .bill {
+      font-size: 47px; }
+  .speaker-1 {
+    max-width: 490px; }
+  .speaker-text h3 {
+    font-size: 60px;
+    line-height: 65px;
+    letter-spacing: 4px;
+    margin-bottom: 10px; }
+  .speaker-text p {
+    font-size: 15px; }
+  .block-50 {
+    margin: 10px 0 70px 13px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 9px 0 9px 25px; }
+  .padding-left-91 {
+    padding-left: 61px; }
+  .decor-2 {
+    height: 215px;
+    left: 24px; }
+  .decor-lg {
+    height: 450px;
+    width: 300px; }
+  .position {
+    bottom: 27px;
+    right: auto;
+    left: 30%; }
+  .sentence-text h5 {
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 20px; }
+  .sentence-text p {
+    font-size: 15px;
+    line-height: 22px; }
+  .position-2 {
+    left: auto;
+    right: 16%;
+    top: 50px; }
+  .unique-area .unique-text {
+    padding: 10px 53px; }
+    .unique-area .unique-text p {
+      font-size: 15px; }
+  .terms p {
+    font-size: 15px; }
+  .request .text-request {
+    max-width: 450px; }
+    .request .text-request h3 {
+      font-size: 25px;
+      line-height: 35px;
+      letter-spacing: 1px;
+      margin-bottom: 6px; }
+  .program-stages h3 {
+    font-size: 55px; }
+  .img-margin-right .unique-block img {
+    margin-left: -50px; }
+  .unique-text-margin-left .unique-area .unique-text {
+    margin-left: 10px;
+    padding: 20px 0; }
+  .unique-text-margin-left .unique-area p {
+    line-height: 20px; }
+  .service p {
+    font-size: 15px; }
+  .numeral-sm .unique-block .numeral {
+    margin-left: 11px; }
+  .holder-offers .img-area .mask-holder {
+    max-width: 550px;
+    padding: 65px 0 0 50px;
+    margin-right: 30px; }
+    .holder-offers .img-area .mask-holder h4 {
+      font-size: 24px; }
+    .holder-offers .img-area .mask-holder h3 {
+      font-size: 45px;
+      margin-bottom: 40px; }
+    .holder-offers .img-area .mask-holder p {
+      font-size: 15px; }
+  .position-3 {
+    top: 5px;
+    right: auto;
+    left: 37%; }
+  .decor-xl {
+    height: 170px;
+    width: 350px; }
+  .donor-feedback h3 {
+    font-size: 55px; }
+  .donor-feedback .text-btn {
+    margin-right: 25px; }
+    .donor-feedback .text-btn p {
+      font-size: 15px; }
+  .review {
+    padding: 20px 25px 3px; }
+    .review p {
+      font-size: 15px; }
+  .slick-prev {
+    right: 11%; }
+  .slick-next {
+    right: 5%; }
+  .answers h3 {
+    font-size: 55px;
+    line-height: 55px; }
+  .answers .response-cell .customer-data p {
+    font-size: 12px;
+    line-height: 15px; }
+  .answer-holder p {
+    font-size: 15px;
+    line-height: 20px; }
+  .ui-accordion .ui-accordion-header {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 13px 60px 21px 40px;
+    margin-bottom: 10px; }
+  .holder-photo-consultation > img {
+    right: 21px;
+    max-width: 700px;
+    z-index: -2; }
+  .holder-photo-consultation .request {
+    padding: 20px;
+    z-index: 1; }
+  .padding-34 .text-request {
+    padding-top: 30px; }
+  .progress .wrapper .text-btn p {
+    font-size: 15px; }
+  .list-numbers {
+    margin-right: 30px; }
+    .list-numbers p {
+      font-size: 15px; }
+    .list-numbers .list .holder .numbers {
+      font-size: 100px; }
+    .list-numbers .list .holder .year {
+      font-size: 15px;
+      margin-left: -25px; }
+    .list-numbers .list .holder .margin-left-0 {
+      margin-left: 0; }
+    .list-numbers .list .holder .margin-left-117 {
+      padding: 0 10px 0 45px; }
+  .contacts h3 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px; }
+  .contacts .contacts-list h3 {
+    font-size: 15px; }
+  .contacts .contacts-list p {
+    font-size: 15px; }
+  .row .padding-left-120 {
+    padding-left: 10px; }
+  .map {
+    max-width: 490px;
+    margin-top: 50px; } }
