@@ -357,8 +357,11 @@ h6 {
     bottom: 7px;
     right: 1px; }
 
+.menu-navigation {
+  display: none; }
+
 .menu-btn {
-  display: none;
+  display: block;
   width: 35px;
   height: 35px;
   z-index: 5;
@@ -405,6 +408,7 @@ h6 {
   height: 0; }
 
 .menu-btn-active span::before {
+  transform: rotate(45deg);
   background-color: #fff; }
 
 .menu-btn-active span::after {
@@ -414,6 +418,18 @@ h6 {
 .menu-btn-active span::before {
   left: -1px;
   top: -3px; }
+
+.mobile-menu-navigation {
+  position: fixed;
+  z-index: 6;
+  right: -240%;
+  top: 0;
+  bottom: 0;
+  padding: 106px 84px 68px 80px;
+  background-color: #162137;
+  max-width: 865px;
+  transition: .5s ease-in-out right;
+  overflow: auto; }
 
 .show-menu {
   right: 0; }
@@ -1560,3 +1576,208 @@ h6 {
     max-width: 205px; }
   .rights p {
     font-size: 10px; } }
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 5px; }
+  .header {
+    position: relative; }
+  .header-content {
+    align-items: end; }
+  .languages {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 70px; }
+  .logo img {
+    width: 120px; }
+  .navigation {
+    display: block; }
+    .navigation li {
+      margin-bottom: 20px; }
+      .navigation li a {
+        color: #fff;
+        font-size: 26px;
+        line-height: 30px; }
+      .navigation li span {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px; }
+  .mobile-menu-navigation {
+    padding: 30px; }
+  .menu-btn {
+    z-index: 8; }
+  .padding-left-49 {
+    padding-left: 30px; }
+  .decor {
+    left: 20px; }
+  .banner {
+    margin-bottom: -40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .holder-number {
+    margin-left: 20px;
+    margin-bottom: 5px; }
+  .speaker-text {
+    text-align: center; }
+    .speaker-text h3 {
+      font-size: 30px;
+      line-height: 35px; }
+  .padding-left-91 {
+    padding-left: 30px; }
+  .decor-2 {
+    left: 75px; }
+  .sentence {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .sentence-text h5 {
+    font-size: 35px;
+    line-height: 40px; }
+  .terms {
+    text-align: center; }
+    .terms h3 {
+      font-size: 20px;
+      line-height: 30px; }
+  .decoration {
+    display: none; }
+  .unique-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .unique-list li {
+      margin-bottom: 8px; }
+  .request {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0 4px 10px;
+    margin-bottom: 5px; }
+    .request .text-request p {
+      font-size: 11px; }
+  .program-stages {
+    text-align: center; }
+    .program-stages h3 {
+      font-size: 25px;
+      line-height: 35px; }
+    .program-stages .text-btn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+  .unique-width .unique-area {
+    width: 100%; }
+  .unique-block .numeral {
+    font-size: 50px; }
+  .unique-block-xl .unique-area .unique-block .stage {
+    font-size: 18px;
+    margin-right: 188px; }
+  .text-decor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .text-decor .holder-area {
+      width: 100%; }
+    .text-decor .holder-text {
+      margin-right: 0;
+      margin-bottom: 20px; }
+  .unique-list {
+    display: block; }
+    .unique-list li {
+      width: 100%; }
+  .unique-list-sm .service p {
+    font-size: 15px; }
+  .payment-guarantees {
+    margin-bottom: 10px; }
+    .payment-guarantees h3 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 45px; }
+  .holder-offers {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .holder-offers .img-area .mask-holder {
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 0 0 10px;
+    max-width: 270px;
+    min-height: 230px; }
+    .holder-offers .img-area .mask-holder h4 {
+      font-size: 12px; }
+    .holder-offers .img-area .mask-holder h3 {
+      font-size: 23px; }
+    .holder-offers .img-area .mask-holder p {
+      font-size: 11px;
+      padding: 0 15px; }
+  .donor-feedback {
+    text-align: center; }
+    .donor-feedback h3 {
+      font-size: 35px;
+      line-height: 40px; }
+  .holder-feedback {
+    align-items: center;
+    flex-direction: column; }
+  .feedback-slider {
+    max-width: 280px;
+    margin-top: 70px; }
+  .slick-prev {
+    right: 75%; }
+  .answers {
+    text-align: center; }
+    .answers h3 {
+      font-size: 25px;
+      line-height: 35px; }
+  .holder-accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .accordion-answers {
+    width: 100%;
+    padding: 0; }
+  .holder-photo-consultation > img {
+    display: none; }
+  .about-the-clinic {
+    text-align: center;
+    margin-bottom: 17px; }
+    .about-the-clinic h3 {
+      font-size: 40px;
+      line-height: 45px; }
+  .display-flex-m {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .background-photo {
+    margin-bottom: 5px; }
+  .progress {
+    text-align: center;
+    margin-bottom: 35px; }
+    .progress h3 {
+      font-size: 20px;
+      line-height: 25px; }
+  .contacts {
+    text-align: center; }
+    .contacts .contacts-list .address {
+      margin-bottom: 16px; }
+    .contacts .contacts-list .social-network .icons {
+      justify-content: center; }
+      .contacts .contacts-list .social-network .icons li {
+        margin: 0 10px; }
+        .contacts .contacts-list .social-network .icons li i {
+          font-size: 20px; }
+  .list-numbers {
+    margin-right: 0; }
+    .list-numbers p {
+      font-size: 12px;
+      line-height: 15px; }
+    .list-numbers .list .holder .numbers {
+      line-height: 75px; }
+  .max-width-50 {
+    width: 100%; }
+  #block3 {
+    height: 10px; }
+  .nav-rights {
+    display: none; } }

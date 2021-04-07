@@ -1037,3 +1037,414 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header-content {
+    align-items: end;
+  }
+
+  .languages {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 70px;
+  }
+
+  .logo {
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .navigation {
+    display: block;
+    
+    li {
+      margin-bottom: 20px;
+      
+      a {
+        color: #fff;
+        font-size: 26px;
+        line-height: 30px;
+      }
+
+      span {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .mobile-menu-navigation {
+    padding: 30px;
+  }
+
+  .menu-btn {
+    z-index: 8;
+  }
+
+  .padding-left-49 {
+    padding-left: 30px;
+  }
+
+  .decor {
+    left: 20px;
+  }
+
+  .banner {
+    margin-bottom: -40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .holder-number {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .speaker-text {
+    text-align: center;
+
+    h3 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+
+  .padding-left-91 {
+    padding-left: 30px;
+  }
+
+  .decor-2 {
+    left: 75px;
+  }
+
+  .sentence {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sentence-text {
+
+    h5 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .terms {
+    text-align: center;
+
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .decoration {
+    display: none;
+  }
+
+  .unique-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  .request {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0 4px 10px;
+    margin-bottom: 5px;
+
+    .text-request {
+
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .program-stages {
+    text-align: center;
+
+    h3 {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    .text-btn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .unique-width {
+
+    .unique-area {
+      width: 100%;
+    }
+  }
+
+  .unique-block {
+
+    .numeral {
+      font-size: 50px;
+    }
+  }
+
+  .unique-block-xl {
+
+    .unique-area {
+
+      .unique-block {
+
+        .stage {
+          font-size: 18px;
+          margin-right: 188px;
+        }
+      }
+    }
+  }
+
+  .text-decor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .holder-area {
+      width: 100%;
+    }
+
+    .holder-text {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .unique-list {
+    display: block;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  .unique-list-sm {
+
+    .service {
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .payment-guarantees {
+    margin-bottom: 10px;
+
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  .holder-offers {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .holder-offers {
+
+    .img-area {
+
+      .mask-holder {
+        text-align: center;
+        margin-top: 0;
+        padding: 15px 0 0 10px;
+        max-width: 270px;
+        min-height: 230px;
+
+        h4 {
+          font-size: 12px;
+        }
+
+        h3 {
+          font-size: 23px;
+        }
+
+        p {
+          font-size: 11px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
+  .donor-feedback {
+    text-align: center;
+
+    h3 {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  .holder-feedback {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .feedback-slider {
+    max-width: 280px;
+    margin-top: 70px;
+  }
+
+  .slick-prev {
+    right: 75%;
+  }
+
+  .answers {
+    text-align: center;
+
+    h3 {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+
+  .holder-accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-answers {
+    width: 100%;
+    padding: 0;
+  }
+
+  .holder-photo-consultation > {
+
+    img {
+      display: none;
+    }
+  }
+
+  .about-the-clinic {
+    text-align: center;
+    margin-bottom: 17px;
+
+    h3 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  }
+
+  .display-flex-m {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .background-photo {
+    margin-bottom: 5px;
+  }
+
+  .progress {
+    text-align: center;
+    margin-bottom: 35px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  .contacts {
+    text-align: center;
+
+    .contacts-list {
+
+      .address {
+        margin-bottom: 16px;
+      }
+
+      .social-network {
+
+        .icons {
+          justify-content: center;
+
+          li {
+            margin: 0 10px;
+
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .list-numbers {
+    margin-right: 0;
+
+    p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .list {
+
+      .holder {
+
+        .numbers {
+          line-height: 75px;
+        }
+      }
+    }
+  }
+
+  .max-width-50 {
+    width: 100%;
+  }
+
+  #block3 {
+    height: 10px;
+  }
+
+  .nav-rights {
+    display: none;
+  }
+
+
+
+
+
+
+}

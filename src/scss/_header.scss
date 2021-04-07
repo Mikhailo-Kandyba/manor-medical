@@ -1,5 +1,9 @@
-.menu-btn {
+.menu-navigation {
   display: none;
+}
+
+.menu-btn {
+  display: block;
   width: 35px;
   height: 35px;
   z-index: 5;
@@ -55,7 +59,7 @@
 }
 
 .menu-btn-active span::before {
-
+  transform: rotate(45deg);
   background-color: #fff;
 }
 
@@ -67,6 +71,19 @@
 .menu-btn-active span::before {
   left: -1px;
   top: -3px;
+}
+
+.mobile-menu-navigation {
+  position: fixed;
+  z-index: 6;
+  right: -240%;
+  top: 0;
+  bottom: 0;
+  padding: 106px 84px 68px 80px;
+  background-color: #162137;
+  max-width: 865px;
+  transition: .5s ease-in-out right;
+  overflow: auto;
 }
 
 .show-menu {
