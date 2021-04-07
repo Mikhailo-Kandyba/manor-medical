@@ -854,14 +854,6 @@
   flex-direction: column;
 }
 
-.modal {
-  max-width: 660px !important;
-  padding: 0 !important;
-  -webkit-box-shadow: none !important;
-  border-bottom-left-radius: 60px !important;
-  height: 520px !important;
-}
-
 .modal a.close-modal {
   display: none !important;
 }
@@ -911,4 +903,16 @@
       }
     }
   }
+}
+
+.blocker {
+  z-index: 5!important;
+}
+
+.modal {
+  max-width: 660px !important;
+  padding: 0 !important;
+  -webkit-box-shadow: none !important;
+  border-bottom-left-radius: 60px !important;
+  height: 520px !important;
 }
