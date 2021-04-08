@@ -6,7 +6,6 @@
 @import "common";
 
 @media (max-width: 1279px) {
-
   .btn {
 
     span {
@@ -129,7 +128,6 @@
   }
 
   .unique-area {
-
     .unique-text {
       padding: 10px 5px 10px 50px;
 
@@ -170,19 +168,15 @@
   }
 
   .img-margin-right {
-
     .unique-block {
-
       img {
-        margin-left: -50px;
+        margin-left: -80px;
       }
     }
   }
 
   .unique-text-margin-left {
-
     .unique-area {
-
       .unique-text {
         margin-left: 10px;
         padding: 20px 0;
@@ -195,16 +189,13 @@
   }
 
   .service {
-
     p {
       font-size: 15px;
     }
   }
 
   .numeral-sm {
-
     .unique-block {
-
       .numeral {
         margin-left: 11px;
       }
@@ -212,9 +203,7 @@
   }
 
   .holder-offers {
-
     .img-area {
-
       .mask-holder {
         max-width: 550px;
         padding: 65px 0 0 50px;
@@ -248,22 +237,20 @@
   }
 
   .donor-feedback {
+    margin-bottom: 80px;
 
     h3 {
       font-size: 55px;
     }
 
     .text-btn {
-      margin-right: 25px;
+      margin-right: 0;
+
 
       p {
         font-size: 15px;
       }
     }
-  }
-
-  .donor-feedback {
-    margin-bottom: 80px;
   }
 
   .holder-photo-consultation {
@@ -287,9 +274,7 @@
     }
 
     .response-cell {
-
       .customer-data {
-
         p {
           font-size: 12px;
           line-height: 15px;
@@ -300,7 +285,6 @@
   }
 
   .answer-holder {
-
     p {
       font-size: 15px;
       line-height: 20px;
@@ -308,7 +292,6 @@
   }
 
   .ui-accordion {
-
     .ui-accordion-header {
       font-size: 15px;
       line-height: 20px;
@@ -318,7 +301,6 @@
   }
 
   .holder-photo-consultation {
-
     > img {
       right: 21px;
       max-width: 700px;
@@ -339,7 +321,6 @@
   }
 
   .padding-34 {
-
     .text-request {
       padding-top: 30px;
     }
@@ -349,9 +330,7 @@
     margin-bottom: 95px;
 
     .wrapper {
-
       .text-btn {
-
         p {
           font-size: 15px;
         }
@@ -367,9 +346,7 @@
     }
 
     .list {
-
       .holder {
-
         .numbers {
           font-size: 100px;
         }
@@ -400,7 +377,6 @@
     }
 
     .contacts-list {
-
       h3 {
         font-size: 15px;
       }
@@ -412,7 +388,6 @@
   }
 
   .row {
-
     .padding-left-120 {
       padding-left: 10px;
     }
@@ -420,6 +395,16 @@
 }
 
 @media (max-width: 1023px) {
+  .header {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .btn-menu {
+    top: 8px;
+    right: 21px;
+  }
+
   .navigation {
     display: none;
 
@@ -458,22 +443,10 @@
     display: none;
   }
 
-  .menu-btn {
-    display: block;
-    z-index: 7;
-    padding: 10px 35px 0 0;
-    margin-bottom: 50px;
-  }
-  .header {
-    position: relative;
-    margin-bottom: 15px;
-  }
-
   .languages {
     position: absolute;
-    right: 0;
+    right: 84px;
     top: 0;
-    padding: 5px 130px;
   }
 
   .mobile-menu-navigation {
@@ -481,7 +454,6 @@
   }
 
   .show-menu {
-
     .navigation {
       display: block;
     }
@@ -491,12 +463,19 @@
     margin-bottom: 20px;
   }
 
+  .block-50 {
+    margin: 10px 0 70px 90px;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 7px 0 7px 15px;
+  }
+
   .speaker-1 {
-    max-width: 290px;
+    max-width: 350px;
+    text-align: center;
   }
 
   .img-area {
-
     img {
       max-width: 260px;
     }
@@ -538,13 +517,12 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: 15px;
       line-height: 20px;
     }
   }
 
   .btn {
-
     span {
       font-size: 14px;
     }
@@ -556,13 +534,6 @@
 
   .padding-left-91 {
     padding-left: 120px;
-  }
-
-  .block-50 {
-    margin: 10px 0 70px 90px;
-    font-size: 11px;
-    line-height: 11px;
-    padding: 7px 0 7px 15px;
   }
 
   .decor-2 {
@@ -592,12 +563,16 @@
     }
 
     p {
-      font-size: 12px;
+      font-size: 15px;
       line-height: 18px;
     }
   }
 
-  .decor-xl {
+  .padding-top-75 {
+    padding-top: 25px;
+  }
+
+    .decor-xl {
     height: 90px;
     width: 180px;
   }
@@ -610,7 +585,6 @@
   }
 
   .terms {
-
     h3 {
       font-size: 31px;
       line-height: 40px;
@@ -618,7 +592,7 @@
     }
 
     p {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 20px;
     }
   }
@@ -631,14 +605,15 @@
     margin-bottom: 0;
   }
 
-    .unique-block {
+  .unique-block {
     height: 45px;
+    max-width: 150px;
 
     .numeral {
       font-size: 20px;
       line-height: 22px;
       margin-left: 10px;
-      margin-right: 20px;
+      margin-right: 60px;
     }
 
     img {
@@ -651,20 +626,8 @@
   }
 
   .unique-list {
-
     li {
       padding-left: 10px;
-    }
-  }
-
-    .unique-area {
-
-    .unique-text {
-
-      p {
-        font-size: 13px;
-        line-height: 18px;
-      }
     }
   }
 
@@ -673,6 +636,7 @@
 
     .text-request {
       max-width: 350px;
+      margin: 0 0 20px;
 
       h3 {
         font-size: 20px;
@@ -689,9 +653,7 @@
   }
 
   .form-group-checkbox {
-
     .form-group-2 {
-
       label {
         font-size: 15px;
       }
@@ -699,14 +661,12 @@
   }
 
   .program-stages {
-
     h3 {
       font-size: 45px;
       margin-bottom: 10px;
     }
 
     .text-btn {
-
       p {
         font-size: 15px;
         line-height: 20px;
@@ -717,7 +677,7 @@
 
   .unique-block-xl {
     .unique-area {
-      .unique-block{
+      .unique-block {
         padding: 30px 0;
 
         .stage {
@@ -735,7 +695,6 @@
     margin-right: 20px;
 
     .holder-text {
-
       p {
         max-width: 365px;
         line-height: 20px;
@@ -745,7 +704,6 @@
   }
 
   .unique-list-sm {
-
     .service {
       padding-left: 20px;
     }
@@ -756,7 +714,6 @@
   }
 
   .payment-guarantees {
-
     h3 {
       font-size: 50px;
       line-height: 55px;
@@ -764,9 +721,7 @@
   }
 
   .holder-offers {
-
     .img-area {
-
       .mask-holder {
         max-width: 370px;
         padding: 55px 0 0 40px;
@@ -778,28 +733,23 @@
   }
 
   .numeral-sm {
-
     .unique-block {
       height: 35px;
-      width: 13%;
+      width: 50px;
     }
   }
 
   .unique-area {
-
     .unique-text {
-
       p {
-        font-size: 11px;
+        font-size: 14px;
+        line-height: 18px;
       }
     }
   }
 
-
   .unique-text-margin-left {
-
     .unique-area {
-
       .unique-text {
         padding: 10px 0;
       }
@@ -807,11 +757,8 @@
   }
 
   .holder-offers {
-
     .img-area {
-
       .mask-holder {
-
         h4 {
           font-size: 15px;
           margin-bottom: 0;
@@ -837,7 +784,6 @@
 
 
   .donor-feedback {
-
     h3 {
       font-size: 45px;
       line-height: 50px;
@@ -845,9 +791,9 @@
     }
 
     .text-btn {
-
       p {
-        font-size: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -856,7 +802,7 @@
     padding: 20px 15px 13px;
 
     p {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 20px;
     }
   }
@@ -870,7 +816,6 @@
   }
 
   .client {
-
     .holder-photo {
       height: 50px;
       width: 50px;
@@ -886,14 +831,12 @@
   }
 
   .slick-slide {
-
     img {
       width: 30px;
     }
   }
 
   .answers {
-
     h3 {
       font-size: 35px;
       line-height: 45px;
@@ -902,11 +845,10 @@
   }
 
   .ui-accordion {
-
     .ui-accordion-header {
       padding: 13px 50px 13px 20px;
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 14px;
+      line-height: 20px;
 
       .fa {
         right: 10px;
@@ -918,11 +860,9 @@
   }
 
   .answers {
-
     .response-cell {
-
       img {
-        width: 60px;
+        width: 50px;
       }
 
       .customer-data {
@@ -930,25 +870,25 @@
         margin-bottom: 10px;
 
         h3 {
-          font-size: 12px;
+          font-size: 14px;
         }
 
         p {
-          line-height: 13px;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0;
         }
       }
     }
   }
 
   .answer-holder {
-
     p {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
   .holder-photo-consultation > {
-
     img {
       max-width: 600px;
       right: 0;
@@ -1051,6 +991,11 @@
     position: relative;
   }
 
+  .btn-menu {
+    top: 5px;
+    right: 19px;
+  }
+
   .navigation {
     padding-left: 10px;
   }
@@ -1061,9 +1006,8 @@
 
   .languages {
     position: absolute;
-    right: 0;
+    right: 84px;
     top: 0;
-    padding: 5px 70px;
   }
 
   .logo {
@@ -1074,10 +1018,10 @@
 
   .navigation {
     display: none;
-    
+
     li {
       margin-bottom: 20px;
-      
+
       a {
         color: #fff;
         font-size: 26px;
@@ -1102,7 +1046,6 @@
   }
 
   .show-menu {
-
     .navigation {
       display: block;
     }
@@ -1129,7 +1072,7 @@
   }
 
   .banner {
-    margin-bottom: -40px;
+    margin-bottom: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1162,21 +1105,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
 
   .sentence-text {
-
     h5 {
-      font-size: 35px;
-      line-height: 40px;
+      font-size: 30px;
+      line-height: 35px;
     }
   }
 
   .terms {
     text-align: center;
+    margin-bottom: 60px;
 
     h3 {
-      font-size: 20px;
+      font-size: 22px;
       line-height: 30px;
     }
   }
@@ -1201,24 +1145,17 @@
     align-items: center;
     text-align: center;
     padding: 5px 10px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     .text-request {
-
       p {
-        font-size: 11px;
+        font-size: 14px;
       }
     }
   }
 
-  .donor-feedback .text-btn {
-    margin-right: 0;
-  }
-
   .numeral-sm {
-
     .unique-block {
-
       .numeral {
         margin-left: 0;
         padding: 10px;
@@ -1230,53 +1167,34 @@
     text-align: center;
 
     h3 {
-      font-size: 25px;
-      line-height: 35px;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     .text-btn {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 50px;
     }
-  }
-
-  .form-group {
-    margin-bottom: 10px;
-
-    input {
-      padding: 10px;
-
-      &::placeholder {
-        font-size: 15px;
-      }
-    }
-  }
-
-  .form-group-checkbox {
-    display: block;
   }
 
   .unique-width {
-
     .unique-area {
       width: 100%;
     }
   }
 
   .unique-block {
-
     .numeral {
       font-size: 50px;
+      margin-right: 20px;
     }
   }
 
   .unique-block-xl {
-
     .unique-area {
-
       .unique-block {
-
         .stage {
           font-size: 18px;
           margin-right: 188px;
@@ -1309,7 +1227,6 @@
   }
 
   .unique-list-sm {
-
     .service {
 
       p {
@@ -1323,9 +1240,9 @@
 
     h3 {
       text-align: center;
-      font-size: 40px;
-      line-height: 45px;
-      margin-bottom: 30px;
+      font-size: 35px;
+      line-height: 40px;
+      margin: 0 0 20px;
     }
   }
 
@@ -1333,21 +1250,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .holder-offers {
+    margin: 0 0 50px;
 
     .img-area {
-
       .mask-holder {
         text-align: center;
         margin-top: 0;
-        padding: 15px 0 0 10px;
+        padding: 20px 10px;
         max-width: 270px;
         min-height: 230px;
+        margin-right: 0;
 
         h4 {
-          font-size: 12px;
+          font-size: 14px;
+          line-height: 20px;
         }
 
         h3 {
@@ -1355,15 +1271,10 @@
         }
 
         p {
-          font-size: 11px;
-          padding: 0 15px;
+          font-size: 14px;
         }
       }
     }
-  }
-
-  .donor-feedback {
-    margin-bottom: 40px;
   }
 
   .review {
@@ -1371,12 +1282,18 @@
     margin-left: 10px;
   }
 
+  .donor-feedback .text-btn {
+    margin-right: 0;
+  }
+
   .donor-feedback {
     text-align: center;
+    margin-bottom: 40px;
 
     h3 {
       font-size: 35px;
       line-height: 40px;
+      margin: 0 0 20px;
     }
   }
 
@@ -1387,7 +1304,8 @@
 
   .feedback-slider {
     max-width: 280px;
-    margin-top: 70px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   .feedback-slider button {
@@ -1411,7 +1329,7 @@
 
     h3 {
       font-size: 25px;
-      line-height: 35px;
+      line-height: 30px;
     }
   }
 
@@ -1428,7 +1346,6 @@
   }
 
   .holder-photo-consultation > {
-
     img {
       display: none;
     }
@@ -1456,11 +1373,21 @@
 
   .progress {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
 
     h3 {
-      font-size: 20px;
+      font-size: 22px;
       line-height: 25px;
+      margin-bottom: 10px;
+    }
+
+    .wrapper {
+      .text-btn {
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 
@@ -1468,13 +1395,11 @@
     text-align: center;
 
     .contacts-list {
-
       .address {
         margin-bottom: 16px;
       }
 
       .social-network {
-
         .icons {
           justify-content: center;
 
@@ -1499,9 +1424,7 @@
     }
 
     .list {
-
       .holder {
-
         .numbers {
           line-height: 75px;
         }
@@ -1526,21 +1449,23 @@
   }
 
   .form-group {
+    margin-bottom: 10px;
 
     input {
+      padding: 10px;
 
       &::placeholder {
-        font-size: 16px;
+        font-size: 15px;
       }
     }
   }
 
   .form-group-checkbox {
+    display: block;
 
     .form-group-2 {
-
       label {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }
@@ -1574,6 +1499,10 @@
 
       li {
         margin: 0;
+
+        a {
+          font-size: 14px;
+        }
       }
     }
 
@@ -1594,16 +1523,21 @@
   }
 
   .modal-content {
-    padding: 35px 0 0 0!important;
+    padding: 35px 15px 0 15px !important;
+    height: 410px !important;
 
     .request {
-      padding: 0!important;
+      padding: 0 !important;
 
       .padding-0-20 {
         padding: 12px 3px;
       }
 
       .text-request {
+        h3 {
+          font-size: 22px!important;
+          line-height: 25px!important;
+        }
 
         p {
           font-size: 20px;
