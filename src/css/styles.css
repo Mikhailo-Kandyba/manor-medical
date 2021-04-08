@@ -856,34 +856,42 @@ h6 {
   z-index: 5;
   border: none; }
 
-.slick-prev {
+.slick-prev,
+.slick-next {
   position: absolute;
   left: auto;
   right: 0;
   top: 0;
-  background-image: url(../images/right.png);
-  background-repeat: no-repeat;
-  background-position: center;
   height: 40px;
   width: 18px;
   border: solid 1px #c5c5c5;
   border-radius: 5px;
   font-size: 0;
   margin-right: 15px; }
+  .slick-prev:hover,
+  .slick-next:hover {
+    border-color: #003DBB; }
+  .slick-prev:after,
+  .slick-next:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.slick-prev {
+  margin-right: 15px; }
+  .slick-prev:after {
+    background-image: url(../images/left.png);
+    transform: rotate(180deg); }
 
 .slick-next {
-  position: absolute;
-  left: auto;
-  right: 0;
-  top: 0;
-  background-image: url(../images/left.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40px;
-  width: 18px;
-  border: solid 1px #c5c5c5;
-  font-size: 0;
   margin-right: 70px; }
+  .slick-next:after {
+    background-image: url(../images/left.png); }
 
 .feedback-slider button {
   border-radius: 5px;
@@ -1091,6 +1099,28 @@ h6 {
   border-bottom-left-radius: 60px !important;
   height: 520px !important; }
 
+.background-photo {
+  margin-bottom: 20px; }
+
+.holder-area-footer .map {
+  max-width: 400px; }
+
+.footer .menu-btn {
+  display: none; }
+
+.footer .navigation {
+  display: flex;
+  margin-bottom: 5px; }
+  .footer .navigation li a {
+    font-size: 14px;
+    color: #151515; }
+  .footer .navigation li span {
+    font-size: 15px; }
+  .footer .navigation li #select {
+    font-size: 12px; }
+  .footer .navigation .active a {
+    color: #003DBB; }
+
 @media (max-width: 1279px) {
   .btn span {
     font-size: 16px; }
@@ -1262,26 +1292,20 @@ h6 {
       margin-left: 0; }
     .list-numbers .list .holder .margin-left-117 {
       padding: 0 10px 0 45px; }
-  .contacts h3 {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 20px; }
-  .contacts .contacts-list h3 {
-    font-size: 15px; }
-  .contacts .contacts-list p {
-    font-size: 15px; }
+  .contacts {
+    margin: 0 0 30px; }
+    .contacts h3 {
+      font-size: 40px;
+      line-height: 50px;
+      margin-bottom: 20px; }
+    .contacts .contacts-list h3 {
+      font-size: 15px; }
+    .contacts .contacts-list p {
+      font-size: 15px; }
   .row .padding-left-120 {
     padding-left: 10px; } }
 
-.background-photo {
-  margin-bottom: 20px; }
-
-.holder-area-footer .map {
-  max-width: 400px; }
-
 @media (max-width: 1023px) {
-  .container {
-    padding: 0 30px; }
   .navigation {
     display: none; }
     .navigation li {
@@ -1430,15 +1454,6 @@ h6 {
       .request .text-request p {
         font-size: 13px;
         line-height: 19px; }
-  .form-group {
-    margin-bottom: 10px; }
-    .form-group input {
-      font-size: 10px;
-      line-height: 10px;
-      height: 30px;
-      padding: 10px; }
-      .form-group input::placeholder {
-        font-size: 15px; }
   .form-group-checkbox .form-group-2 label {
     font-size: 15px; }
   .program-stages h3 {
@@ -1451,7 +1466,6 @@ h6 {
   .unique-block-xl .unique-area .unique-block {
     padding: 30px 0; }
     .unique-block-xl .unique-area .unique-block .stage {
-      font-size: 10px;
       line-height: 20px; }
   .unique-block-xl .unique-area .unique-text {
     padding: 10px 0; }
@@ -1463,8 +1477,6 @@ h6 {
       font-size: 15px; }
   .unique-list-sm .service {
     padding-left: 20px; }
-    .unique-list-sm .service p {
-      font-size: 10px; }
   .decoration {
     max-width: 350px; }
   .payment-guarantees h3 {
@@ -1540,7 +1552,6 @@ h6 {
     .answers .response-cell .customer-data h3 {
       font-size: 12px; }
     .answers .response-cell .customer-data p {
-      font-size: 9px;
       line-height: 13px; }
   .answer-holder p {
     font-size: 12px; }
@@ -1579,8 +1590,6 @@ h6 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px; }
-  .contacts .contacts-list {
-    font-size: 10px; }
   .holder-area-footer {
     position: relative; }
     .holder-area-footer .map {
@@ -1593,31 +1602,13 @@ h6 {
   .max-width-50 {
     width: 50%; }
   .logo-xl {
-    max-width: 205px; }
-  .rights p {
-    font-size: 10px; } }
-
-.footer .menu-btn {
-  display: none; }
-
-.footer .navigation {
-  display: flex;
-  margin-bottom: 5px; }
-  .footer .navigation li a {
-    font-size: 9px;
-    color: #151515; }
-  .footer .navigation li span {
-    font-size: 15px; }
-  .footer .navigation li #select {
-    font-size: 12px; }
-  .footer .navigation .active a {
-    color: #003DBB; }
+    max-width: 205px; } }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 5px; }
   .header {
     position: relative; }
+  .navigation {
+    padding-left: 10px; }
   .header-content {
     align-items: end; }
   .languages {
@@ -1702,9 +1693,11 @@ h6 {
     align-items: center;
     text-align: center;
     padding: 5px 10px;
-    margin-bottom: 5px; }
+    margin-bottom: 50px; }
     .request .text-request p {
       font-size: 11px; }
+  .donor-feedback .text-btn {
+    margin-right: 0; }
   .numeral-sm .unique-block .numeral {
     margin-left: 0;
     padding: 10px; }
@@ -1717,6 +1710,14 @@ h6 {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+  .form-group {
+    margin-bottom: 10px; }
+    .form-group input {
+      padding: 10px; }
+      .form-group input::placeholder {
+        font-size: 15px; }
+  .form-group-checkbox {
+    display: block; }
   .unique-width .unique-area {
     width: 100%; }
   .unique-block .numeral {
@@ -1740,11 +1741,12 @@ h6 {
   .unique-list-sm .service p {
     font-size: 15px; }
   .payment-guarantees {
-    margin-bottom: 10px; }
+    margin-bottom: 50px; }
     .payment-guarantees h3 {
       text-align: center;
       font-size: 40px;
-      line-height: 45px; }
+      line-height: 45px;
+      margin-bottom: 30px; }
   .holder-offers {
     flex-direction: column;
     align-items: center;
@@ -1779,7 +1781,7 @@ h6 {
     max-width: 280px;
     margin-top: 70px; }
   .feedback-slider button {
-    padding: 10px; }
+    padding: 15px; }
   .slick-prev {
     margin-right: 0;
     margin-top: 27%; }
@@ -1838,10 +1840,12 @@ h6 {
       line-height: 15px; }
     .list-numbers .list .holder .numbers {
       line-height: 75px; }
+  .answers .response-cell {
+    padding: 5px 10px 20px 6px; }
+  .answer-holder {
+    padding: 0; }
   .max-width-50 {
     width: 100%; }
-  .nav-rights {
-    display: none; }
   .contact-form {
     width: 100%; }
   .form-group input::placeholder {
@@ -1862,6 +1866,18 @@ h6 {
       max-width: 390px; }
   .footer {
     padding: 10px 0 0; }
+    .footer .navigation {
+      display: block;
+      margin-bottom: 20px; }
+      .footer .navigation li {
+        margin: 0; }
+    .footer .header-content {
+      display: block;
+      text-align: center; }
+  .contacts .contacts-list {
+    font-size: 14px; }
+  .social-network {
+    margin-bottom: 20px; }
   .modal-content {
     padding: 35px 0 0 0 !important; }
     .modal-content .request {
@@ -1870,7 +1886,10 @@ h6 {
         padding: 12px 3px; }
       .modal-content .request .text-request p {
         font-size: 20px; }
-    .modal-content .form-group input::placeholder {
-      font-size: 15px; }
     .modal-content .form-group-checkbox .form-group-2 label {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .rights {
+    text-align: center;
+    margin-bottom: 30px; }
+    .rights p {
+      max-width: inherit; } }

@@ -330,8 +330,7 @@
     margin-bottom: 10px;
   }
 
-    .holder-photo-consultation {
-
+  .holder-photo-consultation {
     .request {
       margin-bottom: 0;
       padding: 20px;
@@ -392,6 +391,7 @@
   }
 
   .contacts {
+    margin: 0 0 30px;
 
     h3 {
       font-size: 40px;
@@ -419,23 +419,7 @@
   }
 }
 
-.background-photo {
-  margin-bottom: 20px;
-}
-
-.holder-area-footer {
-
-  .map {
-    max-width: 400px;
-  }
-}
-
 @media (max-width: 1023px) {
-
-  .container {
-    padding: 0 30px;
-  }
-
   .navigation {
     display: none;
 
@@ -704,21 +688,6 @@
     }
   }
 
-  .form-group {
-    margin-bottom: 10px;
-
-    input {
-      font-size: 10px;
-      line-height: 10px;
-      height: 30px;
-      padding: 10px;
-
-      &::placeholder {
-        font-size: 15px;
-      }
-    }
-  }
-
   .form-group-checkbox {
 
     .form-group-2 {
@@ -747,14 +716,11 @@
   }
 
   .unique-block-xl {
-
     .unique-area {
-
       .unique-block{
         padding: 30px 0;
 
         .stage {
-          font-size: 10px;
           line-height: 20px;
         }
       }
@@ -782,10 +748,6 @@
 
     .service {
       padding-left: 20px;
-
-      p {
-        font-size: 10px;
-      }
     }
   }
 
@@ -972,7 +934,6 @@
         }
 
         p {
-          font-size: 9px;
           line-height: 13px;
         }
       }
@@ -1054,17 +1015,11 @@
   }
 
   .contacts {
-
     h3 {
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 10px;
     }
-
-    .contacts-list {
-      font-size: 10px;
-    }
-
   }
 
   .holder-area-footer {
@@ -1089,56 +1044,15 @@
   .logo-xl {
     max-width: 205px;
   }
-
-  .rights {
-
-    p {
-      font-size: 10px;
-    }
-  }
-}
-
-.footer {
-
-  .menu-btn {
-    display: none;
-  }
-
-  .navigation {
-    display: flex;
-    margin-bottom: 5px;
-
-    li {
-      a {
-        font-size: 9px;
-        color: #151515;
-      }
-
-      span {
-        font-size: 15px;
-      }
-      #select {
-        font-size: 12px;
-      }
-    }
-
-    .active {
-
-      a {
-        color: #003DBB;
-      }
-    }
-  }
 }
 
 @media (max-width: 767px) {
-
-  .container {
-    padding: 0 5px;
-  }
-
   .header {
     position: relative;
+  }
+
+  .navigation {
+    padding-left: 10px;
   }
 
   .header-content {
@@ -1153,7 +1067,6 @@
   }
 
   .logo {
-
     img {
       width: 120px;
     }
@@ -1288,7 +1201,7 @@
     align-items: center;
     text-align: center;
     padding: 5px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
 
     .text-request {
 
@@ -1296,6 +1209,10 @@
         font-size: 11px;
       }
     }
+  }
+
+  .donor-feedback .text-btn {
+    margin-right: 0;
   }
 
   .numeral-sm {
@@ -1322,6 +1239,22 @@
       justify-content: center;
       align-items: center;
     }
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+
+    input {
+      padding: 10px;
+
+      &::placeholder {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .form-group-checkbox {
+    display: block;
   }
 
   .unique-width {
@@ -1386,12 +1319,13 @@
   }
 
   .payment-guarantees {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 
     h3 {
       text-align: center;
       font-size: 40px;
       line-height: 45px;
+      margin-bottom: 30px;
     }
   }
 
@@ -1457,7 +1391,7 @@
   }
 
   .feedback-slider button {
-    padding: 10px;
+    padding: 15px;
   }
 
   .slick-prev {
@@ -1575,12 +1509,16 @@
     }
   }
 
-  .max-width-50 {
-    width: 100%;
+  .answers .response-cell {
+    padding: 5px 10px 20px 6px;
   }
 
-  .nav-rights {
-    display: none;
+  .answer-holder {
+    padding: 0;
+  }
+
+  .max-width-50 {
+    width: 100%;
   }
 
   .contact-form {
@@ -1629,6 +1567,30 @@
 
   .footer {
     padding: 10px 0 0;
+
+    .navigation {
+      display: block;
+      margin-bottom: 20px;
+
+      li {
+        margin: 0;
+      }
+    }
+
+    .header-content {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .contacts {
+    .contacts-list {
+      font-size: 14px;
+    }
+  }
+
+  .social-network {
+    margin-bottom: 20px;
   }
 
   .modal-content {
@@ -1643,30 +1605,27 @@
 
       .text-request {
 
-        h3 {
-
-        }
-
         p {
           font-size: 20px;
         }
       }
     }
 
-    .form-group input {
-      &::placeholder {
-        font-size: 15px;
-      }
-    }
-
     .form-group-checkbox {
-
       .form-group-2 {
-
         label {
           font-size: 16px;
         }
       }
+    }
+  }
+
+  .rights {
+    text-align: center;
+    margin-bottom: 30px;
+
+    p {
+      max-width: inherit;
     }
   }
 }
