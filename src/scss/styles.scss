@@ -28,8 +28,12 @@
     }
   }
 
+  .mobile-menu-navigation {
+    display: none;
+  }
+
   .banner {
-    margin-bottom: 110px;
+    margin-bottom: 20px;
   }
 
   .img-area {
@@ -127,7 +131,7 @@
   .unique-area {
 
     .unique-text {
-      padding: 10px 53px;
+      padding: 10px 5px 10px 50px;
 
       p {
         font-size: 15px;
@@ -143,6 +147,7 @@
   }
 
   .request {
+    margin-bottom: 50px;
 
     .text-request {
       max-width: 450px;
@@ -157,6 +162,7 @@
   }
 
   .program-stages {
+    margin-bottom: 50px;
 
     h3 {
       font-size: 55px;
@@ -256,6 +262,14 @@
     }
   }
 
+  .donor-feedback {
+    margin-bottom: 80px;
+  }
+
+  .holder-photo-consultation {
+    margin-bottom: 60px;
+  }
+
   .review {
     padding: 20px 25px 3px;
 
@@ -264,15 +278,8 @@
     }
   }
 
-  .slick-prev {
-    right: 11%;
-  }
-
-  .slick-next {
-    right: 5%;
-  }
-
   .answers {
+    margin-bottom: 20px;
 
     h3 {
       font-size: 55px;
@@ -319,9 +326,14 @@
     }
   }
 
-  .holder-photo-consultation {
+  .about-the-clinic {
+    margin-bottom: 10px;
+  }
+
+    .holder-photo-consultation {
 
     .request {
+      margin-bottom: 0;
       padding: 20px;
       z-index: 1;
     }
@@ -335,6 +347,7 @@
   }
 
   .progress {
+    margin-bottom: 95px;
 
     .wrapper {
 
@@ -404,10 +417,16 @@
       padding-left: 10px;
     }
   }
+}
+
+.background-photo {
+  margin-bottom: 20px;
+}
+
+.holder-area-footer {
 
   .map {
-    max-width: 490px;
-    margin-top: 50px;
+    max-width: 400px;
   }
 }
 
@@ -421,6 +440,7 @@
     display: none;
 
     li {
+      margin-left: 10px;
       margin-bottom: 20px;
 
       a {
@@ -435,6 +455,19 @@
         margin-bottom: 10px;
       }
     }
+
+    .tel {
+      margin-top: 60px;
+      margin-left: 60px;
+
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .mobile-menu-navigation {
+    display: block;
   }
 
   .navigation {
@@ -444,21 +477,23 @@
   .menu-btn {
     display: block;
     z-index: 7;
-    padding: 15px 45px 0 0;
+    padding: 10px 35px 0 0;
+    margin-bottom: 50px;
   }
   .header {
     position: relative;
+    margin-bottom: 15px;
   }
 
   .languages {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 22px 130px;
+    padding: 5px 130px;
   }
 
   .mobile-menu-navigation {
-    padding: 106px 84px 68px 20px;
+    padding: 85px 90px 10px 10px;
   }
 
   .show-menu {
@@ -469,7 +504,7 @@
   }
 
   .banner {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .speaker-1 {
@@ -669,10 +704,6 @@
     }
   }
 
-  .contact-form {
-    max-width: 270px;
-  }
-
   .form-group {
     margin-bottom: 10px;
 
@@ -681,6 +712,10 @@
       line-height: 10px;
       height: 30px;
       padding: 10px;
+
+      &::placeholder {
+        font-size: 15px;
+      }
     }
   }
 
@@ -689,7 +724,7 @@
     .form-group-2 {
 
       label {
-        font-size: 9px;
+        font-size: 15px;
       }
     }
   }
@@ -785,10 +820,6 @@
     .unique-block {
       height: 35px;
       width: 13%;
-
-      .numeral {
-        margin-left: 9px;
-      }
     }
   }
 
@@ -842,6 +873,7 @@
     left: auto;
   }
 
+
   .donor-feedback {
 
     h3 {
@@ -849,10 +881,6 @@
       line-height: 50px;
       letter-spacing: 0;
     }
-  }
-
-  .donor-feedback {
-    margin-bottom: 80px;
 
     .text-btn {
 
@@ -877,10 +905,6 @@
 
   .slick-list {
     max-width: 460px;
-  }
-
-  .slick-prev {
-    right: 13%;
   }
 
   .client {
@@ -971,6 +995,7 @@
   }
 
   .about-the-clinic {
+    margin-bottom: 30px;
 
     h3 {
       font-size: 50px;
@@ -1042,12 +1067,15 @@
 
   }
 
-  .map {
-    max-width: 390px;
-  }
+  .holder-area-footer {
+    position: relative;
 
-  #block4 {
-    left: -80px;
+    .map {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 390px;
+    }
   }
 
   .max-width-380 {
@@ -1070,15 +1098,36 @@
   }
 }
 
-.modal {
-  max-width: 460px!important;
-  height: 456px!important;
-}
+.footer {
 
-.modal-content {
+  .menu-btn {
+    display: none;
+  }
 
-  .request {
-    padding: 0!important;
+  .navigation {
+    display: flex;
+    margin-bottom: 5px;
+
+    li {
+      a {
+        font-size: 9px;
+        color: #151515;
+      }
+
+      span {
+        font-size: 15px;
+      }
+      #select {
+        font-size: 12px;
+      }
+    }
+
+    .active {
+
+      a {
+        color: #003DBB;
+      }
+    }
   }
 }
 
@@ -1100,7 +1149,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    padding: 10px 70px;
+    padding: 5px 70px;
   }
 
   .logo {
@@ -1128,6 +1177,15 @@
         margin-bottom: 10px;
       }
     }
+
+    .tel {
+      margin-top: 50px;
+      margin-left: 40px;
+
+      a {
+        font-size: 15px;
+      }
+    }
   }
 
   .show-menu {
@@ -1138,7 +1196,7 @@
   }
 
   .mobile-menu-navigation {
-    padding: 30px;
+    padding: 60px 50px 10px 0;
   }
 
   .menu-btn {
@@ -1146,7 +1204,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    margin: 5px 5px 0 0;
+    margin: 0 5px 0 0;
   }
 
   .padding-left-49 {
@@ -1229,13 +1287,24 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px 0 4px 10px;
+    padding: 5px 10px;
     margin-bottom: 5px;
 
     .text-request {
 
       p {
         font-size: 11px;
+      }
+    }
+  }
+
+  .numeral-sm {
+
+    .unique-block {
+
+      .numeral {
+        margin-left: 0;
+        padding: 10px;
       }
     }
   }
@@ -1360,6 +1429,15 @@
   }
 
   .donor-feedback {
+    margin-bottom: 40px;
+  }
+
+  .review {
+    max-width: 230px;
+    margin-left: 10px;
+  }
+
+  .donor-feedback {
     text-align: center;
 
     h3 {
@@ -1378,8 +1456,20 @@
     margin-top: 70px;
   }
 
+  .feedback-slider button {
+    padding: 10px;
+  }
+
   .slick-prev {
-    right: 75%;
+    margin-right: 0;
+    margin-top: 27%;
+  }
+
+  .slick-next {
+    left: 0;
+    right: auto;
+    margin-right: 0;
+    margin-top: 27%;
   }
 
   .answers {
@@ -1458,7 +1548,7 @@
             margin: 0 10px;
 
             i {
-              font-size: 20px;
+              font-size: 24px;
             }
           }
         }
@@ -1489,37 +1579,32 @@
     width: 100%;
   }
 
-  #block3 {
-    height: 10px;
-  }
-
   .nav-rights {
     display: none;
   }
 
-  .modal-content {
-    padding-top: 10px!important;
+  .contact-form {
+    width: 100%;
+  }
 
-    .request {
+  .form-group {
 
-      .text-request {
+    input {
 
-        h3 {
-          font-size: 13px!important;
-          line-height: 20px!important;
-          margin-bottom: 0!important;
-        }
+      &::placeholder {
+        font-size: 16px;
       }
     }
   }
 
-  .contact-form {
-    max-width: 210px;
-  }
-
   .form-group-checkbox {
-    align-items: flex-end;
-    flex-direction: column;
+
+    .form-group-2 {
+
+      label {
+        font-size: 12px;
+      }
+    }
   }
 
   .close-btn {
@@ -1531,9 +1616,61 @@
     padding: 12px 20px 10px;
   }
 
-  .modal {
-    height: 255px!important;
+  .holder-area-footer {
+    position: relative;
+
+    .map {
+      position: inherit;
+      right: 0;
+      bottom: 0;
+      max-width: 390px;
+    }
   }
+
+  .footer {
+    padding: 10px 0 0;
+  }
+
+  .modal-content {
+    padding: 35px 0 0 0!important;
+
+    .request {
+      padding: 0!important;
+
+      .padding-0-20 {
+        padding: 12px 3px;
+      }
+
+      .text-request {
+
+        h3 {
+
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .form-group input {
+      &::placeholder {
+        font-size: 15px;
+      }
+    }
+
+    .form-group-checkbox {
+
+      .form-group-2 {
+
+        label {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+
 
 
 
