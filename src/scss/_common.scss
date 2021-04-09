@@ -539,12 +539,10 @@
 .holder-photo-consultation {
   display: flex;
   position: relative;
-  margin-bottom: 37px;
   background: url("../images/image11.png");
   background-position: top right;
   background-size: 790px 630px;
   background-repeat: no-repeat;
-  margin-bottom: 170px;
   padding: 40px 0;
 
   .request {
@@ -811,17 +809,6 @@
   }
 }
 
-.holder-area-footer {
-  position: relative;
-
-  .map {
-    position: absolute;
-    right: 0;
-    top: 0;
-    max-width: 1000px;
-  }
-}
-
 .logo-xl {
   width: 285px;
 }
@@ -858,6 +845,19 @@
 .nav-rights {
   display: flex;
   flex-direction: column;
+}
+
+.holder-area-footer {
+  position: relative;
+
+  .map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 460px;
+    height: auto;
+    overflow: hidden;
+  }
 }
 
 .modal a.close-modal {
@@ -923,13 +923,32 @@
   height: 520px !important;
 }
 
-.background-photo {
-  margin-bottom: 20px;
+.header-content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.holder-area-footer {
-  .map {
-    max-width: 400px;
+.navigation-footer {
+  display: flex;
+  margin-bottom: 45px;
+
+  li {
+    margin-left: 15px;
+    a {
+      font-size: 14px;
+      color: #151515;
+    }
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .active {
+    a {
+      color: #003DBB;
+    }
   }
 }
 
@@ -938,31 +957,5 @@
 
   .menu-btn {
     display: none;
-  }
-
-  .navigation {
-    display: flex;
-    margin-bottom: 5px;
-
-    li {
-      a {
-        font-size: 10px;
-        color: #151515;
-      }
-
-      span {
-        font-size: 15px;
-      }
-      #select {
-        font-size: 12px;
-      }
-    }
-
-    .active {
-
-      a {
-        color: #003DBB;
-      }
-    }
   }
 }

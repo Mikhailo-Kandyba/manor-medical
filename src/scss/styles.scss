@@ -253,10 +253,6 @@
     }
   }
 
-  .holder-photo-consultation {
-    margin-bottom: 60px;
-  }
-
   .review {
     padding: 20px 25px 3px;
 
@@ -300,23 +296,28 @@
     }
   }
 
-  .holder-photo-consultation {
-    > img {
-      right: 21px;
-      max-width: 700px;
-      z-index: -2;
-    }
-  }
-
   .about-the-clinic {
     margin-bottom: 10px;
   }
 
   .holder-photo-consultation {
+    margin-bottom: 60px;
+
     .request {
       margin-bottom: 0;
       padding: 20px;
       z-index: 1;
+    }
+  }
+
+  .holder-area-footer {
+    position: relative;
+
+    .map {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 410px;
     }
   }
 
@@ -367,6 +368,11 @@
     }
   }
 
+  .navigation-footer {
+    li {
+      margin-left: 11px;
+    }
+  }
   .contacts {
     margin: 0 0 30px;
 
@@ -962,17 +968,6 @@
     }
   }
 
-  .holder-area-footer {
-    position: relative;
-
-    .map {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      max-width: 390px;
-    }
-  }
-
   .max-width-380 {
     max-width: 380px;
   }
@@ -981,8 +976,29 @@
     width: 50%;
   }
 
+  .footer {
+    padding: 30px 0;
+  }
+
+  .header-content-footer {
+    display: flex;
+  }
+
+  .navigation-footer {
+    display: flex;
+    margin-bottom: 20px;
+
+    li {
+      margin-left: 11px;
+
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+
   .logo-xl {
-    max-width: 205px;
+    max-width: 155px;
   }
 }
 
@@ -1492,23 +1508,23 @@
 
   .footer {
     padding: 10px 0 0;
+  }
 
-    .navigation {
-      display: block;
-      margin-bottom: 20px;
+  .header-content-footer {
+    display: block;
+    text-align: center;
+  }
 
-      li {
-        margin: 0;
+  .navigation-footer {
+    display: block;
+    margin-bottom: 20px;
 
-        a {
-          font-size: 14px;
-        }
+    li {
+      margin: 0;
+
+      a {
+        font-size: 14px;
       }
-    }
-
-    .header-content {
-      display: block;
-      text-align: center;
     }
   }
 
