@@ -1625,16 +1625,17 @@ h6 {
   .header {
     position: relative; }
   .btn-menu {
-    top: 5px;
+    top: 11px;
     right: 19px; }
   .navigation {
     padding-left: 10px; }
   .header-content {
-    align-items: end; }
+    align-items: end;
+    padding-top: 5px; }
   .languages {
     position: absolute;
     right: 84px;
-    top: 0; }
+    top: 14px; }
   .logo img {
     width: 120px; }
   .navigation {
