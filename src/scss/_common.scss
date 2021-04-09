@@ -537,18 +537,20 @@
 }
 
 .holder-photo-consultation {
-  display: flex;
   position: relative;
-  background: url("../images/image11.png");
-  background-position: top right;
-  background-size: 790px 630px;
-  background-repeat: no-repeat;
-  padding: 40px 0;
+
+   > img {
+    position: absolute;
+    top: -20px;
+    right: -36px;
+   }
 
   .request {
     padding: 12px 0 55px 30px;
     z-index: 5;
     position: relative;
+    margin-top: 39px;
+    margin-bottom: 210px;
 
     .contact-form {
       max-width: 460px;
